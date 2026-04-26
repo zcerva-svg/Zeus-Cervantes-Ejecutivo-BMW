@@ -1,0 +1,4215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zeus Cervantes | BMW Certified Sales Executive</title>
+  <meta name="description" content="Zeus Cervantes — Ejecutivo de Ventas Certificado BMW Group. 17 años en la industria automotriz, 14 dentro de BMW. Chiapas, México." />
+
+  <!-- Google Fonts: Fustat · Schibsted Grotesk · Inter · Noto Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fustat:wght@400;500;600;700;800&family=Schibsted+Grotesk:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=Noto+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ── BMW TypeNext Condensed Pro (fuentes locales) ─────────────── */
+    @font-face { font-family:'BMWTypeNextCondensed'; src:url('BMWTypeNextPro_Mac (1)/Condensed PRO/BMWTypeNextCondensedPro-Thin.ttf') format('truetype'); font-weight:100; font-display:swap; }
+    @font-face { font-family:'BMWTypeNextCondensed'; src:url('BMWTypeNextPro_Mac (1)/Condensed PRO/BMWTypeNextCondensedPro-Light.ttf') format('truetype'); font-weight:300; font-display:swap; }
+    @font-face { font-family:'BMWTypeNextCondensed'; src:url('BMWTypeNextPro_Mac (1)/Condensed PRO/BMWTypeNextCondensedPro-Regular.ttf') format('truetype'); font-weight:400; font-display:swap; }
+    @font-face { font-family:'BMWTypeNextCondensed'; src:url('BMWTypeNextPro_Mac (1)/Condensed PRO/BMWTypeNextCondensedPro-Medium.ttf') format('truetype'); font-weight:500; font-display:swap; }
+    @font-face { font-family:'BMWTypeNextCondensed'; src:url('BMWTypeNextPro_Mac (1)/Condensed PRO/BMWTypeNextCondensedPro-Bold.ttf') format('truetype'); font-weight:700; font-display:swap; }
+    /* ── BMW TypeNext Pro ancho regular ────────────────────────────── */
+    @font-face { font-family:'BMWTypeNextPro'; src:url('BMWTypeNextPro_Mac (1)/Pro/BMWTypeNextPro-Thin.ttf') format('truetype'); font-weight:100; font-display:swap; }
+    @font-face { font-family:'BMWTypeNextPro'; src:url('BMWTypeNextPro_Mac (1)/Pro/BMWTypeNextPro-Light.ttf') format('truetype'); font-weight:300; font-display:swap; }
+    @font-face { font-family:'BMWTypeNextPro'; src:url('BMWTypeNextPro_Mac (1)/Pro/BMWTypeNextPro-Regular.ttf') format('truetype'); font-weight:400; font-display:swap; }
+    @font-face { font-family:'BMWTypeNextPro'; src:url('BMWTypeNextPro_Mac (1)/Pro/BMWTypeNextPro-Medium.ttf') format('truetype'); font-weight:500; font-display:swap; }
+    @font-face { font-family:'BMWTypeNextPro'; src:url('BMWTypeNextPro_Mac (1)/Pro/BMWTypeNextPro-Bold.ttf') format('truetype'); font-weight:700; font-display:swap; }
+
+
+    /* ── VARIABLES ──────────────────────────────────── */
+    :root {
+      --bmw-blue:       #1c69d4;
+      --bmw-blue-light: #3a84f5;
+      --bmw-gold:       #c8a96e;
+      --bmw-dark:       #0a0a0f;
+      --bmw-dark2:      #111118;
+      --bmw-card:       #1a1a24;
+      --bmw-border:     rgba(28,105,212,0.18);
+      --bmw-text:       #e8e8f0;
+      --bmw-muted:      #7070a0;
+      --bmw-silver:     #c0c0d0;
+
+      --surface:        #141b2a;
+      --surface-2:      #18202e;
+      --border-subtle:  rgba(255,255,255,0.07);
+      --ease:           all 0.38s cubic-bezier(0.4,0,0.2,1);
+      --radius:         16px;
+      --radius-lg:      24px;
+    }
+
+    /* ── RESET ──────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #e8ecf4;
+      color: var(--bmw-text);
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+    /* Fixed ambient gradient — pearl silver/white with subtle blue iridescence */
+    body::before {
+      content: '';
+      position: fixed; inset: 0; z-index: -1; pointer-events: none;
+      background:
+        radial-gradient(ellipse 55% 45% at 4% 8%,  rgba(200,215,240,0.70) 0%, transparent 52%),
+        radial-gradient(ellipse 65% 50% at 96% 92%, rgba(195,210,245,0.65) 0%, transparent 55%),
+        radial-gradient(ellipse 50% 40% at 55% 45%, rgba(215,225,250,0.40) 0%, transparent 58%),
+        radial-gradient(ellipse 80% 60% at 20% 75%, rgba(180,200,235,0.35) 0%, transparent 55%),
+        linear-gradient(140deg, #dde3f0 0%, #edf0f8 22%, #f2f5fc 45%, #e8edf8 68%, #dfe5f2 100%);
+    }
+    /* Micro-grain pearl texture for depth */
+    body::after {
+      content: '';
+      position: fixed; inset: 0; z-index: -1; pointer-events: none;
+      background-image:
+        linear-gradient(rgba(80,110,170,0.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(80,110,170,0.035) 1px, transparent 1px);
+      background-size: 60px 60px;
+    }
+    img { display: block; max-width: 100%; }
+    a { text-decoration: none; color: inherit; }
+
+    /* ══════════════════════════════════════════════════
+       HERO — MOTIONSITES LAYOUT
+    ══════════════════════════════════════════════════ */
+    #hero {
+      position: relative;
+      width: 100%;
+      min-height: 100vh;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* ── Video Background ───────────────────────────── */
+    .video-container {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+      overflow: hidden;
+    }
+    .video-container video {
+      position: absolute;
+      width: 115%;
+      height: 115%;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      object-fit: cover;
+      object-position: top center;
+    }
+    /* Dark overlay over video */
+    .video-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        180deg,
+        rgba(10,10,15,0.28) 0%,
+        rgba(10,10,15,0.18) 40%,
+        rgba(10,10,15,0.50) 100%
+      );
+      z-index: 1;
+    }
+
+    /* ── Navigation ─────────────────────────────────── */
+    nav {
+      position: relative; z-index: 10;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 16px 120px;
+    }
+    .nav-logo-wrap { display: flex; align-items: center; gap: 14px; }
+    .nav-bmw-logo { width: 42px; height: 42px; flex-shrink: 0; display: block; }
+    .nav-name-block { display: flex; flex-direction: column; justify-content: center; line-height: 1.2; }
+    .nav-name-main {
+      font-family: 'BMWTypeNextCondensed', sans-serif;
+      font-weight: 700;
+      font-size: 15px;
+      letter-spacing: 0.5px;
+      color: #fff;
+      text-transform: uppercase;
+    }
+    .nav-name-sub {
+      font-family: 'BMWTypeNextCondensed', sans-serif;
+      font-weight: 400;
+      font-size: 10px;
+      letter-spacing: 2px;
+      color: rgba(180,210,255,0.90);
+      text-transform: uppercase;
+    }
+
+    .nav-links-list {
+      display: flex; align-items: center;
+      gap: 32px; list-style: none;
+    }
+    .nav-links-list a {
+      font-family: 'Schibsted Grotesk', sans-serif;
+      font-size: 14px; font-weight: 500;
+      color: rgba(255,255,255,0.75);
+      letter-spacing: -0.2px;
+      transition: color 0.2s;
+      display: flex; align-items: center; gap: 4px;
+    }
+    .nav-links-list a:hover { color: #fff; }
+    .nav-chevron { width: 12px; height: 12px; opacity: 0.6; }
+
+    .nav-actions { display: flex; align-items: center; gap: 8px; }
+    .btn-nav-ghost {
+      min-width: 82px; padding: 8px 16px;
+      background: transparent;
+      border: 1px solid rgba(255,255,255,0.2);
+      color: #fff;
+      font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 500;
+      border-radius: 8px; cursor: pointer; transition: var(--ease);
+      display: flex; align-items: center; justify-content: center; gap: 6px;
+    }
+    .btn-nav-ghost:hover { background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.35); }
+    .btn-nav-solid {
+      min-width: 101px; padding: 8px 18px;
+      background: rgba(28,105,212,0.85);
+      border: 1px solid var(--bmw-blue);
+      color: #fff;
+      font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 500;
+      border-radius: 8px; cursor: pointer; transition: var(--ease);
+      display: flex; align-items: center; justify-content: center; gap: 6px;
+    }
+    .btn-nav-solid:hover { background: var(--bmw-blue); box-shadow: 0 4px 20px rgba(28,105,212,0.4); }
+    .btn-nav-solid svg { width: 14px; height: 14px; }
+
+    /* ── Hero Content ───────────────────────────────── */
+    .hero-content {
+      position: relative; z-index: 5;
+      display: flex; flex-direction: column;
+      align-items: center; text-align: center;
+      padding: 60px 120px 0;
+      margin-top: -50px;
+      flex: 1;
+      gap: 0;
+    }
+
+    /* Badge */
+    .hero-badge-row {
+      display: flex; align-items: center; gap: 8px;
+      margin-bottom: 34px;
+    }
+    .badge-dark {
+      display: flex; align-items: center; gap: 7px;
+      background: #0e1311;
+      border: 1px solid rgba(255,255,255,0.1);
+      padding: 6px 12px; border-radius: 50px;
+      font-family: 'Inter', sans-serif; font-size: 13px; font-weight: 400;
+      color: rgba(255,255,255,0.9);
+    }
+    .badge-star {
+      width: 14px; height: 14px;
+      color: var(--bmw-gold);
+    }
+    .badge-sep { width: 1px; height: 18px; background: rgba(255,255,255,0.15); }
+    .badge-light {
+      display: flex; align-items: center; gap: 7px;
+      background: rgba(255,255,255,0.09);
+      border: 1px solid rgba(255,255,255,0.12);
+      padding: 6px 14px; border-radius: 50px;
+      font-family: 'Inter', sans-serif; font-size: 13px; font-weight: 400;
+      color: rgba(255,255,255,0.75);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+
+    /* Headline */
+    .hero-h1 {
+      font-family: 'Fustat', sans-serif;
+      font-weight: 800;
+      font-size: 80px;
+      line-height: 1;
+      letter-spacing: -4.8px;
+      color: #fff;
+      margin-bottom: 0;
+    }
+    .hero-h1 .accent { color: var(--bmw-blue-light); }
+
+    /* Subtitle */
+    .hero-sub {
+      font-family: 'Inter', sans-serif;
+      font-size: 20px; font-weight: 400;
+      letter-spacing: -0.4px;
+      color: #8a9ab0;
+      max-width: 580px;
+      line-height: 1.55;
+      margin-top: 34px;
+    }
+
+    /* ── Contact Box (adapted from search box) ──────── */
+    .contact-box-wrap {
+      margin-top: 44px;
+      width: 100%;
+      max-width: 728px;
+      background: rgba(0,0,0,0.24);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 18px;
+      padding: 14px;
+      box-shadow: 0 24px 80px rgba(0,0,0,0.35);
+    }
+
+    /* Top info row */
+    .cbox-top {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 4px 10px;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      margin-bottom: 12px;
+    }
+    .cbox-top-left {
+      display: flex; align-items: center; gap: 10px;
+      font-family: 'Inter', sans-serif; font-size: 12px; font-weight: 400;
+      color: rgba(255,255,255,0.7);
+    }
+    .cbox-cert-badge {
+      background: rgba(28,105,212,0.25);
+      border: 1px solid rgba(28,105,212,0.4);
+      color: var(--bmw-blue-light);
+      font-size: 10px; font-weight: 600;
+      padding: 3px 9px; border-radius: 50px;
+      text-transform: uppercase; letter-spacing: 0.8px;
+    }
+    .cbox-top-right {
+      display: flex; align-items: center; gap: 6px;
+      font-family: 'Inter', sans-serif; font-size: 12px; font-weight: 400;
+      color: rgba(255,255,255,0.55);
+    }
+    .cbox-ai-icon { width: 14px; height: 14px; color: var(--bmw-blue-light); }
+
+    /* Main CTA area */
+    .cbox-main {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 12px;
+      padding: 16px 20px;
+      display: flex; align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 12px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.2);
+    }
+    .cbox-tagline {
+      font-family: 'Inter', sans-serif;
+      font-size: 18px; font-weight: 600;
+      color: rgba(255,255,255,0.9);
+      letter-spacing: -0.3px;
+      text-align: left;
+      line-height: 1.3;
+    }
+    .cbox-tagline span { color: var(--bmw-blue-light); }
+    .cbox-submit-btn {
+      width: 44px; height: 44px; flex-shrink: 0;
+      background: #fff; border: none;
+      border-radius: 50%; cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+      transition: var(--ease); color: #000;
+    }
+    .cbox-submit-btn:hover {
+      background: var(--bmw-blue);
+      color: #fff;
+      transform: scale(1.06);
+      box-shadow: 0 8px 24px rgba(28,105,212,0.4);
+    }
+    .cbox-submit-btn svg { width: 18px; height: 18px; }
+
+    /* Bottom actions */
+    .cbox-bottom {
+      display: flex; align-items: center;
+      justify-content: space-between; gap: 8px;
+    }
+    .cbox-actions { display: flex; gap: 6px; }
+    .cbox-action-btn {
+      display: flex; align-items: center; gap: 6px;
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.1);
+      color: rgba(255,255,255,0.7);
+      font-family: 'Inter', sans-serif; font-size: 13px; font-weight: 400;
+      padding: 6px 12px; border-radius: 6px;
+      cursor: pointer; transition: var(--ease);
+      white-space: nowrap;
+    }
+    .cbox-action-btn:hover { background: rgba(255,255,255,0.13); color: #fff; }
+    .cbox-action-btn svg { width: 13px; height: 13px; }
+    .cbox-counter {
+      font-family: 'Inter', sans-serif; font-size: 12px;
+      color: rgba(255,255,255,0.35);
+      white-space: nowrap;
+    }
+
+    /* ── Stats bar below hero ───────────────────────── */
+    .hero-stats-bar {
+      position: relative; z-index: 5;
+      display: flex; align-items: center; justify-content: center;
+      gap: 0;
+      padding: 40px 120px 60px;
+    }
+    .hstat {
+      text-align: center; padding: 0 48px;
+      border-right: 1px solid rgba(255,255,255,0.1);
+    }
+    .hstat:last-child { border-right: none; }
+    .hstat-num {
+      font-family: 'BMWTypeNextCondensed', sans-serif;
+      font-size: 44px; font-weight: 700;
+      letter-spacing: -2px; color: #fff; line-height: 1;
+    }
+    .hstat-num sup { font-size: 18px; color: var(--bmw-blue-light); }
+    .hstat-label {
+      font-family: 'Inter', sans-serif;
+      font-size: 12px; font-weight: 400;
+      color: var(--bmw-muted); text-transform: uppercase;
+      letter-spacing: 1px; margin-top: 6px; line-height: 1.4;
+    }
+
+    /* ══════════════════════════════════════════════════
+       SECTIONS BELOW HERO
+    ══════════════════════════════════════════════════ */
+    .section { padding: 7rem 120px; }
+    .inner { max-width: 1200px; margin: 0 auto; }
+
+    .s-tag {
+      font-family: 'BMWTypeNextCondensed', sans-serif;
+      font-size: 11px; font-weight: 300;
+      color: var(--bmw-blue-light);
+      text-transform: uppercase; letter-spacing: 2.5px;
+      margin-bottom: 12px; display: block;
+    }
+    .s-title {
+      font-family: 'BMWTypeNextCondensed', sans-serif;
+      font-size: clamp(2rem, 3.5vw, 3rem);
+      font-weight: 700; letter-spacing: -1.5px;
+      color: #fff; line-height: 1.05; margin-bottom: 1rem;
+    }
+    .s-desc {
+      font-family: 'Inter', sans-serif;
+      font-size: 1rem; font-weight: 400;
+      color: var(--bmw-muted); line-height: 1.75;
+      max-width: 540px;
+    }
+    .s-head { margin-bottom: 3.5rem; }
+
+    /* ── QUIÉN SOY ──────────────────────────────────── */
+    #quien-soy { background: var(--bmw-dark2); padding: 7rem 120px; }
+    .about-grid {
+      max-width: 1200px; margin: 0 auto;
+      display: grid; grid-template-columns: 0.85fr 1.15fr;
+      gap: 6rem; align-items: start;
+    }
+    .about-photo-frame {
+      border-radius: 20px; overflow: hidden;
+      aspect-ratio: 4/5;
+      border: 1px solid var(--bmw-border);
+      position: relative;
+    }
+    .about-photo-frame img {
+      width: 100%; height: 100%; object-fit: cover; object-position: top;
+    }
+    .about-cert {
+      position: absolute; bottom: -1.5rem; right: -1.5rem;
+      background: var(--bmw-blue);
+      padding: 1.2rem 1.5rem; border-radius: 14px;
+      text-align: center;
+      box-shadow: 0 14px 40px rgba(28,105,212,0.4);
+    }
+    .cert-num {
+      font-family: 'BMWTypeNextCondensed', sans-serif;
+      font-size: 2.2rem; font-weight: 700; display: block; line-height: 1;
+    }
+    .cert-label {
+      font-family: 'BMWTypeNextCondensed', sans-serif;
+      font-size: 0.6rem; text-transform: uppercase; letter-spacing: 1px;
+      opacity: 0.85; margin-top: 0.3rem;
+    }
+    .about-photo-wrap { position: relative; }
+
+    .about-h2 {
+      font-family: 'BMWTypeNextCondensed', sans-serif;
+      font-size: clamp(1.8rem, 2.8vw, 2.5rem);
+      font-weight: 700; letter-spacing: -1.2px; line-height: 1.1;
+      color: #fff; margin-bottom: 6px;
+    }
+    .about-h2 .blue { color: var(--bmw-blue-light); }
+    .about-sub {
+      font-family: 'BMWTypeNextCondensed', sans-serif;
+      font-size: 11px; color: var(--bmw-blue-light);
+      text-transform: uppercase; letter-spacing: 2px;
+      margin-bottom: 1.8rem;
+    }
+    .about-bio {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.97rem; font-weight: 400;
+      color: var(--bmw-muted); line-height: 1.8; margin-bottom: 2rem;
+    }
+    .about-bio p + p { margin-top: 1rem; }
+    .about-values { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 2.2rem; }
+    .value-tag {
+      background: rgba(28,105,212,0.1);
+      border: 1px solid var(--bmw-border);
+      padding: 6px 14px; border-radius: 50px;
+      font-family: 'Inter', sans-serif; font-size: 12px; font-weight: 400;
+      color: var(--bmw-text);
+      display: flex; align-items: center; gap: 6px;
+    }
+    .value-tag::before {
+      content: ''; width: 5px; height: 5px;
+      background: var(--bmw-blue-light); border-radius: 50%;
+    }
+    .about-highlights {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 12px;
+    }
+    .highlight-card {
+      background: var(--bmw-card);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 14px; padding: 1.3rem 1.4rem;
+    }
+    .hc-num {
+      font-family: 'BMWTypeNextCondensed', sans-serif;
+      font-size: 1.9rem; font-weight: 700;
+      color: #fff; line-height: 1; letter-spacing: -1px;
+    }
+    .hc-num sup { font-size: 0.9rem; color: var(--bmw-blue-light); }
+    .hc-icon {
+      font-size: 2.2rem; color: var(--bmw-blue); margin-bottom: 8px; line-height: 1;
+    }
+    .hc-desc {
+      font-family: 'BMWTypeNextCondensed', sans-serif;
+      font-size: 11px; color: var(--bmw-muted);
+      text-transform: uppercase; letter-spacing: 0.8px;
+      margin-top: 4px; line-height: 1.4;
+    }
+
+    /* ── FINANCIAMIENTO ─────────────────────────────── */
+    #financiamiento { background: rgba(7,7,13,0.82); padding: 7rem 120px; }
+    .fin-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;
+    }
+    .fin-card {
+      background: var(--bmw-card);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 20px; padding: 2.2rem 1.8rem;
+      transition: var(--ease); position: relative; overflow: hidden;
+    }
+    .fin-card::before {
+      content: '';
+      position: absolute; top: 0; left: 0; right: 0; height: 1px;
+      background: linear-gradient(90deg, transparent, var(--bmw-blue), transparent);
+      opacity: 0; transition: opacity 0.3s;
+    }
+    .fin-card:hover { border-color: var(--bmw-border); transform: translateY(-4px); }
+    .fin-card:hover::before { opacity: 1; }
+    .fin-icon {
+      width: 48px; height: 48px;
+      background: rgba(28,105,212,0.12);
+      border: 1px solid var(--bmw-border);
+      border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+      margin-bottom: 1.4rem;
+      color: var(--bmw-blue-light);
+    }
+    .fin-icon svg { width: 22px; height: 22px; }
+    .fin-title {
+      font-family: 'BMWTypeNextCondensed', sans-serif;
+      font-size: 1.1rem; font-weight: 700;
+      color: #fff; margin-bottom: 0.6rem; line-height: 1.2;
+      letter-spacing: -0.3px;
+    }
+    .fin-desc {
+      font-family: 'Inter', sans-serif;
+      font-size: 13px; font-weight: 400;
+      color: var(--bmw-muted); line-height: 1.7; margin-bottom: 1.5rem;
+    }
+    .fin-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+    .fin-tag {
+      font-family: 'BMWTypeNextCondensed', sans-serif;
+      font-size: 10px; font-weight: 700;
+      color: var(--bmw-blue-light);
+      background: rgba(28,105,212,0.1);
+      border: 1px solid rgba(28,105,212,0.2);
+      padding: 3px 10px; border-radius: 50px;
+      text-transform: uppercase; letter-spacing: 0.8px;
+    }
+
+    /* ── PORTAFOLIO ─────────────────────────────────── */
+    #portafolio { background: var(--bmw-dark2); padding: 7rem 120px; }
+    .port-header {
+      display: flex; align-items: flex-end;
+      justify-content: space-between; margin-bottom: 2.5rem;
+    }
+    .port-badge {
+      font-family: 'BMWTypeNextCondensed', sans-serif;
+      font-size: 11px; font-weight: 700;
+      color: var(--bmw-blue-light);
+      background: rgba(28,105,212,0.1);
+      border: 1px solid var(--bmw-border);
+      padding: 6px 14px; border-radius: 50px;
+      text-transform: uppercase; letter-spacing: 1px;
+    }
+    .port-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px;
+    }
+    .car-card {
+      border-radius: 20px; overflow: hidden;
+      aspect-ratio: 4/3; position: relative;
+      cursor: pointer; border: 1px solid rgba(255,255,255,0.06);
+      transition: var(--ease);
+    }
+    .car-card:hover { transform: translateY(-4px); box-shadow: 0 24px 60px rgba(0,0,0,0.4); }
+    .car-card:hover img { transform: scale(1.05); }
+    .car-card:hover .car-overlay { opacity: 1; }
+    .car-card img {
+      width: 100%; height: 100%; object-fit: cover;
+      transition: transform 0.6s cubic-bezier(0.4,0,0.2,1);
+    }
+    .car-gradient {
+      position: absolute; inset: 0;
+      background: linear-gradient(to top, rgba(10,10,15,0.92) 0%, transparent 60%);
+    }
+    .car-info {
+      position: absolute; bottom: 0; left: 0; right: 0; padding: 1.2rem 1.4rem;
+    }
+    .car-tag {
+      font-family: 'BMWTypeNextCondensed', sans-serif;
+      font-size: 10px; color: var(--bmw-blue-light);
+      text-transform: uppercase; letter-spacing: 1.5px;
+      font-weight: 700; margin-bottom: 3px;
+    }
+    .car-name {
+      font-family: 'BMWTypeNextCondensed', sans-serif;
+      font-size: 1.1rem; font-weight: 700;
+      color: #fff; line-height: 1.1; letter-spacing: -0.3px;
+    }
+    .car-year {
+      font-family: 'BMWTypeNextCondensed', sans-serif;
+      font-size: 12px; color: rgba(255,255,255,0.5); margin-top: 2px;
+    }
+    .car-overlay {
+      position: absolute; inset: 0;
+      background: rgba(28,105,212,0.1);
+      display: flex; align-items: center; justify-content: center;
+      opacity: 0; transition: opacity 0.3s;
+    }
+    .car-cta {
+      background: rgba(255,255,255,0.12);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255,255,255,0.2);
+      color: #fff;
+      font-family: 'Inter', sans-serif; font-size: 13px; font-weight: 400;
+      padding: 8px 18px; border-radius: 50px;
+    }
+    .port-note {
+      text-align: center; margin-top: 1.8rem;
+      font-family: 'Inter', sans-serif;
+      font-size: 12px; color: rgba(255,255,255,0.25);
+      font-style: italic;
+    }
+
+    /* ── CONTACTO ───────────────────────────────────── */
+    #contacto { background: var(--bmw-dark); padding: 7rem 120px; }
+    .contact-wrap {
+      max-width: 1200px; margin: 0 auto;
+      display: grid; grid-template-columns: 1.2fr 0.8fr;
+      gap: 5rem; align-items: center;
+    }
+    .contact-tagline {
+      font-family: 'BMWTypeNextCondensed', sans-serif;
+      font-size: clamp(2rem, 3vw, 2.8rem);
+      font-weight: 700; letter-spacing: -1.5px; line-height: 1.08;
+      color: #fff; margin-bottom: 1rem;
+    }
+    .contact-tagline .blue { color: var(--bmw-blue-light); }
+    .contact-sub {
+      font-family: 'Inter', sans-serif;
+      font-size: 15px; font-weight: 400;
+      color: var(--bmw-muted); line-height: 1.75;
+      margin-bottom: 2.8rem; max-width: 460px;
+    }
+    .contact-methods { display: flex; flex-direction: column; gap: 12px; }
+    .contact-method {
+      display: flex; align-items: center; gap: 14px;
+      padding: 14px 18px;
+      background: var(--bmw-card);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 14px; transition: var(--ease);
+      cursor: pointer; color: inherit;
+    }
+    .contact-method:hover {
+      border-color: var(--bmw-border);
+      transform: translateX(4px);
+    }
+    .contact-method.wa:hover .cm-icon { background: rgba(37,211,102,0.12); border-color: rgba(37,211,102,0.3); }
+    .contact-method.wa:hover .cm-icon svg { color: #25d366; }
+    .cm-icon {
+      width: 44px; height: 44px; flex-shrink: 0;
+      background: linear-gradient(135deg, rgba(28,105,212,0.22) 0%, rgba(28,105,212,0.10) 100%);
+      border: 1px solid rgba(28,105,212,0.35);
+      border-radius: 13px;
+      display: flex; align-items: center; justify-content: center;
+      transition: var(--ease);
+      color: #5ba8ff;
+      box-shadow: 0 2px 10px rgba(28,105,212,0.15), inset 0 1px 0 rgba(255,255,255,0.08);
+    }
+    .cm-icon svg { width: 19px; height: 19px; transition: var(--ease); }
+    .cm-label {
+      font-family: 'Inter', sans-serif;
+      font-size: 10px; color: var(--bmw-muted);
+      text-transform: uppercase; letter-spacing: 1px;
+    }
+    .cm-value {
+      font-family: 'Inter', sans-serif;
+      font-size: 14px; font-weight: 400; color: var(--bmw-text);
+      margin-top: 2px;
+    }
+    .cm-sub {
+      font-family: 'Inter', sans-serif;
+      font-size: 11px; color: rgba(255,255,255,0.3); margin-top: 1px;
+    }
+
+    /* Contact right card */
+    .contact-card {
+      background: var(--bmw-card);
+      border: 1px solid rgba(255,255,255,0.07);
+      border-radius: 22px; padding: 2.4rem;
+      text-align: center;
+    }
+    .cc-logo { height: 52px; width: auto; margin: 0 auto 1.4rem; }
+    .cc-name {
+      font-family: 'BMWTypeNextCondensed', sans-serif;
+      font-size: 1.5rem; font-weight: 700;
+      color: #fff; margin-bottom: 4px; text-transform: uppercase; letter-spacing: 1px;
+    }
+    .cc-role {
+      font-family: 'BMWTypeNextCondensed', sans-serif;
+      font-size: 10px; color: var(--bmw-blue-light);
+      text-transform: uppercase; letter-spacing: 2px;
+      margin-bottom: 1.8rem; font-weight: 100;
+    }
+    .cc-divider { height: 1px; background: rgba(255,255,255,0.07); margin-bottom: 1.8rem; }
+    .btn-wa-big {
+      display: flex; align-items: center; justify-content: center; gap: 8px;
+      width: 100%; background: #25d366; color: #fff;
+      padding: 14px; border-radius: 12px;
+      font-family: 'Inter', sans-serif; font-size: 15px; font-weight: 600;
+      transition: var(--ease); margin-bottom: 10px;
+    }
+    .btn-wa-big:hover {
+      background: #1da851;
+      transform: translateY(-2px);
+      box-shadow: 0 12px 36px rgba(37,211,102,0.3);
+    }
+    .btn-wa-big svg { width: 20px; height: 20px; }
+    .btn-secondary-card {
+      display: flex; align-items: center; justify-content: center; gap: 7px;
+      width: 100%;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.08);
+      color: var(--bmw-silver);
+      padding: 11px; border-radius: 12px;
+      font-family: 'Inter', sans-serif; font-size: 13px; font-weight: 400;
+      transition: var(--ease); margin-bottom: 8px;
+    }
+    .btn-secondary-card:hover { border-color: var(--bmw-border); color: #fff; }
+    .btn-secondary-card svg { width: 15px; height: 15px; color: var(--bmw-blue-light); }
+    .cc-note {
+      font-family: 'Inter', sans-serif;
+      font-size: 11px; color: rgba(255,255,255,0.45);
+      line-height: 1.6; margin-top: 1rem;
+    }
+
+
+    /* ── REDES SOCIALES ─────────────────────────────── */
+    .social-links {
+      display: flex; gap: 10px; margin-top: 1.4rem; flex-wrap: wrap;
+    }
+    .social-btn {
+      display: flex; align-items: center; gap: 8px;
+      padding: 9px 16px; border-radius: 50px;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.1);
+      color: rgba(255,255,255,0.7);
+      font-family: 'Inter', sans-serif; font-size: 13px; font-weight: 500;
+      transition: var(--ease); white-space: nowrap;
+    }
+    .social-btn:hover { background: rgba(255,255,255,0.12); color: #fff; border-color: rgba(255,255,255,0.25); transform: translateY(-2px); }
+    .social-btn svg { width: 16px; height: 16px; flex-shrink: 0; }
+    .social-btn.fb:hover  { background: rgba(24,119,242,0.15); border-color: rgba(24,119,242,0.35); color: #4f94f5; }
+    .social-btn.tt:hover  { background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.25); color: #fff; }
+
+    /* Footer social icons */
+    .footer-social { display: flex; align-items: center; gap: 10px; }
+    .footer-social a {
+      width: 32px; height: 32px;
+      display: flex; align-items: center; justify-content: center;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 8px; color: rgba(255,255,255,0.45);
+      transition: var(--ease);
+    }
+    .footer-social a:hover { background: rgba(255,255,255,0.12); color: rgba(255,255,255,0.85); border-color: rgba(255,255,255,0.18); }
+    .footer-social svg { width: 15px; height: 15px; }
+
+    /* ── FOOTER ─────────────────────────────────────── */
+    footer {
+      background: rgba(7,7,13,0.90);
+      border-top: 1px solid rgba(255,255,255,0.05);
+      padding: 2rem 120px;
+    }
+    .footer-inner {
+      max-width: 1200px; margin: 0 auto;
+      display: flex; align-items: center; justify-content: space-between;
+      flex-wrap: wrap; gap: 12px;
+    }
+    .footer-brand { display: flex; align-items: center; gap: 12px; }
+    .footer-logo { height: 28px; width: auto; opacity: 0.55; }
+    .footer-name {
+      font-family: 'Inter', sans-serif;
+      font-size: 12px; color: var(--bmw-muted);
+    }
+    .footer-copy {
+      font-family: 'Inter', sans-serif;
+      font-size: 11px; color: rgba(255,255,255,0.2);
+    }
+
+    /* ── SCROLL REVEAL ──────────────────────────────── */
+    .reveal {
+      opacity: 0; transform: translateY(24px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .reveal.visible { opacity: 1; transform: none; }
+
+    /* ── RESPONSIVE ─────────────────────────────────── */
+    @media (max-width: 1200px) {
+      nav, .hero-content, .hero-stats-bar, .section,
+      #quien-soy, #financiamiento, #portafolio, #contacto, footer {
+        padding-left: 5%; padding-right: 5%;
+      }
+      .hero-content { padding-top: 48px; }
+    }
+    @media (max-width: 900px) {
+      .hero-h1 { font-size: 52px; letter-spacing: -2.5px; }
+      .fin-grid, .port-grid { grid-template-columns: 1fr 1fr; }
+      .about-grid { grid-template-columns: 1fr; gap: 3.5rem; }
+      .contact-wrap { grid-template-columns: 1fr; gap: 3rem; }
+      .contact-card { max-width: 400px; margin: 0 auto; }
+      .hero-stats-bar { flex-wrap: wrap; }
+      .hstat { padding: 1rem 2rem; }
+    }
+    @media (max-width: 600px) {
+      .hero-h1 { font-size: 38px; letter-spacing: -1.5px; }
+      nav { padding: 14px 5%; }
+      .nav-links-list { display: none; }
+      .fin-grid, .port-grid { grid-template-columns: 1fr; }
+      .about-highlights { grid-template-columns: 1fr 1fr; }
+      .contact-box-wrap { margin-left: -5%; margin-right: -5%; border-radius: 0; }
+    }
+
+    /* ═══════════════════════════════════════════════════
+       MARQUEE ── BMW car strip
+    ═══════════════════════════════════════════════════ */
+    @keyframes marquee {
+      0%   { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+    .marquee-section {
+      background: linear-gradient(180deg, #03030f 0%, #06081e 50%, #03030f 100%);
+      padding: 0;
+      overflow: hidden;
+      border-top: 1px solid rgba(58,132,245,0.18);
+      border-bottom: 1px solid rgba(139,92,246,0.18);
+      position: relative;
+    }
+    .marquee-section::before {
+      content: '';
+      position: absolute; top: 0; left: 0; right: 0; height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(58,132,245,0.6) 30%, rgba(139,92,246,0.6) 70%, transparent);
+    }
+    .marquee-track {
+      display: flex;
+      width: max-content;
+      animation: marquee 40s linear infinite;
+    }
+    .marquee-track:hover { animation-play-state: paused; }
+    .marquee-img {
+      height: 200px;
+      width: auto;
+      object-fit: cover;
+      margin: 0 8px;
+      border-radius: 14px;
+      flex-shrink: 0;
+      border: 1px solid rgba(255,255,255,0.06);
+    }
+    @media (min-width: 768px) { .marquee-img { height: 320px; margin: 0 12px; border-radius: 20px; } }
+
+    /* ═══════════════════════════════════════════════════
+       ANIMATIONS — fadeInUp
+    ═══════════════════════════════════════════════════ */
+    @keyframes fadeInUp {
+      0%   { opacity: 0; transform: translateY(32px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    .fiu { opacity: 0; }
+    .fiu.visible { animation: fadeInUp 0.75s cubic-bezier(0.4,0,0.2,1) forwards; }
+
+    /* ═══════════════════════════════════════════════════
+       ABOUT — with parallax photo
+    ═══════════════════════════════════════════════════ */
+    #quien-soy {
+      background: linear-gradient(160deg, #04051a 0%, #080c28 40%, #0a0630 70%, #04051a 100%);
+      padding: 7rem 120px;
+      overflow: hidden;
+      position: relative;
+    }
+    /* Dark-section text — SaaS premium */
+    #quien-soy .about-h2-v2 {
+      background: linear-gradient(150deg, #ffffff 0%, #c8dfff 55%, #9ab8ff 100%);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+    }
+    #quien-soy .about-h2-v2 .serif-accent {
+      background: linear-gradient(135deg, #3a84f5 0%, #8b5cf6 100%);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+    }
+    #quien-soy .about-badge { background: rgba(58,132,245,0.10); border-color: rgba(58,132,245,0.22); color: #7eb8ff; }
+    #quien-soy .about-bio-v2 { color: rgba(185,205,255,0.62); }
+    #quien-soy .value-tag-v2 { background: rgba(255,255,255,0.04); border-color: rgba(255,255,255,0.09); color: rgba(200,215,255,0.70); backdrop-filter: blur(8px); }
+    #quien-soy .astat {
+      background: rgba(255,255,255,0.04);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(255,255,255,0.08);
+      box-shadow: 0 8px 40px rgba(0,0,0,0.30), inset 0 1px 0 rgba(255,255,255,0.08);
+    }
+    #quien-soy .astat-num {
+      background: linear-gradient(135deg, #ffffff 0%, #90c0ff 55%, #c8a96e 100%);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+    }
+    #quien-soy .astat-label { color: rgba(155,185,255,0.50); }
+    .about-grid-v2 {
+      max-width: 1200px; margin: 0 auto;
+      display: grid; grid-template-columns: 1.1fr 0.9fr;
+      gap: 6rem; align-items: start;
+    }
+    .about-text-col { position: relative; }
+    .about-photo-col { position: relative; }
+    .about-parallax-wrap {
+      position: sticky; top: 8rem;
+      border-radius: 24px; overflow: hidden;
+      aspect-ratio: 3/4;
+      border: 1px solid var(--bmw-border);
+      box-shadow: 0 40px 80px rgba(0,0,0,0.4);
+    }
+    .about-parallax-wrap img {
+      width: 100%; height: 110%;
+      object-fit: cover; object-position: top;
+      will-change: transform;
+    }
+    .about-badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: rgba(28,105,212,0.12);
+      border: 1px solid rgba(28,105,212,0.3);
+      color: var(--bmw-blue-light);
+      font-family: 'Inter', sans-serif; font-size: 11px; font-weight: 600;
+      text-transform: uppercase; letter-spacing: 2px;
+      padding: 6px 14px; border-radius: 50px;
+      margin-bottom: 1.5rem;
+    }
+    .about-h2-v2 {
+      font-family: 'BMWTypeNextCondensed', sans-serif;
+      font-size: clamp(2.2rem, 3.8vw, 3.4rem);
+      font-weight: 700; letter-spacing: -2px; line-height: 1.0;
+      color: #fff; margin-bottom: 2rem;
+    }
+    .about-h2-v2 .serif-accent {
+      font-weight: 300; letter-spacing: -1px;
+      color: var(--bmw-blue-light);
+    }
+    .about-bio-v2 {
+      font-family: 'Inter', sans-serif;
+      font-size: 1rem; font-weight: 400;
+      color: rgba(232,232,240,0.65); line-height: 1.8;
+      margin-bottom: 2rem;
+    }
+    .about-bio-v2 p + p { margin-top: 1rem; }
+    .about-cert-pill {
+      display: inline-flex; align-items: center; gap: 10px;
+      background: var(--bmw-blue);
+      color: #fff; font-family: 'Inter', sans-serif;
+      font-size: 13px; font-weight: 600;
+      padding: 10px 20px; border-radius: 50px;
+      margin-bottom: 2.5rem;
+      box-shadow: 0 8px 32px rgba(28,105,212,0.4);
+    }
+    .about-values-v2 { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 2.5rem; }
+    .value-tag-v2 {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      padding: 7px 16px; border-radius: 50px;
+      font-family: 'Inter', sans-serif; font-size: 12px; font-weight: 500;
+      color: rgba(232,232,240,0.7);
+    }
+    .about-stats-v2 {
+      display: grid; grid-template-columns: repeat(2, 1fr);
+      gap: 14px; margin-top: 2rem;
+    }
+    .astat {
+      background: linear-gradient(135deg, rgba(15,22,50,0.95) 0%, rgba(10,15,38,0.98) 100%);
+      border: 1px solid rgba(28,105,212,0.22);
+      border-radius: 22px; padding: 2rem 1.8rem;
+      position: relative; overflow: hidden;
+      transition: border-color 0.3s, transform 0.3s;
+    }
+    .astat:hover { border-color: rgba(28,105,212,0.5); transform: translateY(-3px); }
+    .astat::before {
+      content: '';
+      position: absolute; top: 0; left: 0; right: 0; height: 2px;
+      background: linear-gradient(90deg, transparent 0%, var(--bmw-blue) 50%, transparent 100%);
+    }
+    .astat-num {
+      font-family: 'BMWTypeNextCondensed', sans-serif;
+      font-size: clamp(3.6rem, 5.5vw, 5rem); font-weight: 700;
+      background: linear-gradient(135deg, #0a0f1e 0%, #1c3a6e 60%, #2a5cb8 100%);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      background-clip: text;
+      line-height: 1; letter-spacing: -3px;
+    }
+    .astat-num sup {
+      font-size: 1.6rem; letter-spacing: -1px;
+      -webkit-text-fill-color: var(--bmw-blue);
+      color: var(--bmw-blue);
+    }
+    .astat-label {
+      font-family: 'Inter', sans-serif;
+      font-size: 12px; color: rgba(232,232,240,0.55);
+      text-transform: uppercase; letter-spacing: 0.7px;
+      margin-top: 0.7rem; line-height: 1.4;
+    }
+    /* About photo column — two stacked images */
+    .about-photo-stack { display: flex; flex-direction: column; gap: 10px; position: sticky; top: 6rem; }
+    .about-photo-main {
+      border-radius: 22px; overflow: hidden; aspect-ratio: 3/4;
+      border: 1px solid var(--bmw-border);
+      box-shadow: 0 40px 80px rgba(0,0,0,0.5);
+    }
+    .about-photo-main img { width: 100%; height: 100%; object-fit: cover; object-position: center top; }
+    .about-photo-dealer {
+      border-radius: 16px; overflow: hidden; aspect-ratio: 16/7;
+      border: 1px solid rgba(255,255,255,0.06);
+      position: relative;
+    }
+    .about-photo-dealer img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+    .about-photo-dealer::after {
+      content: 'BMW Farrera · Tuxtla';
+      position: absolute; bottom: 10px; left: 14px;
+      font-family: 'Inter', sans-serif; font-size: 10px; font-weight: 700;
+      color: rgba(255,255,255,0.7); text-transform: uppercase; letter-spacing: 1.5px;
+      background: rgba(7,7,13,0.6); backdrop-filter: blur(6px);
+      padding: 4px 10px; border-radius: 50px;
+    }
+
+    /* ═══════════════════════════════════════════════════
+       FINANCING — Viktor Oddy pricing cards style
+    ═══════════════════════════════════════════════════ */
+    #financiamiento { background: rgba(7,7,13,0.82); padding: 7rem 120px; }
+    .fin-section-head { max-width: 1200px; margin: 0 auto 3.5rem; }
+    .fin-cards-grid {
+      max-width: 1200px; margin: 0 auto;
+      display: grid; grid-template-columns: repeat(3,1fr); gap: 16px;
+    }
+    /* fin-card-v2 base — overridden by avant-garde block below */
+    .fin-card-v2.dark { box-shadow: 0 32px 80px rgba(28,105,212,0.30); }
+    .fin-card-v2.mid { border: 1px solid rgba(255,255,255,0.07); box-shadow: 0 4px 40px rgba(0,0,0,0.3); }
+    .fin-card-v2.light { border: 1px solid rgba(255,255,255,0.08); }
+    .fin-icon-v2 {
+      width: 52px; height: 52px;
+      background: rgba(255,255,255,0.12);
+      border-radius: 14px;
+      display: flex; align-items: center; justify-content: center;
+      margin-bottom: 1.8rem; color: #fff;
+    }
+    .fin-icon-v2 svg { width: 24px; height: 24px; }
+    .fin-name {
+      font-family: 'BMWTypeNextCondensed', sans-serif;
+      font-size: 1.3rem; font-weight: 700;
+      color: #fff; letter-spacing: -0.5px;
+      margin-bottom: 0.6rem; line-height: 1.2;
+    }
+    .fin-sub {
+      font-family: 'Inter', sans-serif;
+      font-size: 13px; color: rgba(255,255,255,0.6);
+      line-height: 1.6; margin-bottom: 1.8rem;
+    }
+    .fin-divider { height: 1px; background: rgba(255,255,255,0.1); margin-bottom: 1.4rem; }
+    .fin-tags-v2 { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 2rem; }
+    .fin-tag-v2 {
+      font-family: 'Inter', sans-serif;
+      font-size: 10px; font-weight: 600;
+      color: rgba(255,255,255,0.7);
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.15);
+      padding: 4px 11px; border-radius: 50px;
+      text-transform: uppercase; letter-spacing: 0.7px;
+    }
+    .btn-fin {
+      display: inline-flex; align-items: center; gap: 7px;
+      font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 600;
+      padding: 11px 22px; border-radius: 50px;
+      cursor: pointer; transition: all 0.25s;
+    }
+    .btn-fin.primary {
+      background: #fff; color: #051A24;
+      box-shadow: 0 1px 2px rgba(5,26,36,.1),0 4px 4px rgba(5,26,36,.09),
+                  0 9px 6px rgba(5,26,36,.05),inset 0 2px 8px rgba(255,255,255,0.5);
+    }
+    .btn-fin.primary:hover { background: #f0f4f8; transform: translateY(-1px); }
+    .btn-fin.ghost {
+      background: transparent; color: rgba(255,255,255,0.8);
+      border: 1px solid rgba(255,255,255,0.2);
+    }
+    .btn-fin.ghost:hover { background: rgba(255,255,255,0.08); }
+    .fin-btns { display: flex; gap: 10px; flex-wrap: wrap; }
+
+    /* ═══════════════════════════════════════════════════
+       PORTFOLIO — Viktor Oddy projects vertical stack
+    ═══════════════════════════════════════════════════ */
+    #portafolio { background: rgba(11,11,18,0.75); padding: 7rem 120px; }
+    .port-section-head {
+      max-width: 1200px; margin: 0 auto 4rem;
+      display: flex; align-items: flex-end; justify-content: space-between;
+    }
+    .port-items { max-width: 1200px; margin: 0 auto; }
+    .port-item {
+      display: flex; flex-direction: column; gap: 1.8rem;
+      margin-bottom: 5rem; cursor: pointer;
+    }
+    .port-item:last-child { margin-bottom: 0; }
+    .port-item-meta { padding-left: 2rem; }
+    .port-item-tag {
+      font-family: 'Inter', sans-serif;
+      font-size: 10px; font-weight: 700;
+      color: var(--bmw-blue-light);
+      text-transform: uppercase; letter-spacing: 2px;
+      margin-bottom: 6px;
+    }
+    .port-item-name {
+      font-family: 'BMWTypeNextCondensed', sans-serif;
+      font-size: clamp(1.5rem, 2.5vw, 2.2rem);
+      font-weight: 700; color: #fff;
+      letter-spacing: -1px; line-height: 1.1;
+      margin-bottom: 6px;
+    }
+    .port-item-desc {
+      font-family: 'Inter', sans-serif;
+      font-size: 14px; color: var(--bmw-muted);
+      line-height: 1.6;
+    }
+    .port-item-img-wrap {
+      border-radius: 22px; overflow: hidden;
+      aspect-ratio: 16/7;
+      border: 1px solid rgba(255,255,255,0.06);
+      position: relative;
+    }
+    .port-item-img-wrap img {
+      width: 100%; height: 100%; object-fit: cover;
+      transition: transform 0.7s cubic-bezier(0.4,0,0.2,1);
+    }
+    .port-item:hover .port-item-img-wrap img { transform: scale(1.04); }
+    .port-item-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(to top, rgba(10,10,15,0.6) 0%, transparent 50%);
+      display: flex; align-items: flex-end; padding: 1.5rem;
+      opacity: 0; transition: opacity 0.3s;
+    }
+    .port-item:hover .port-item-overlay { opacity: 1; }
+    .port-cta-pill {
+      font-family: 'Inter', sans-serif; font-size: 13px; font-weight: 600;
+      color: #fff; background: rgba(255,255,255,0.15);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255,255,255,0.25);
+      padding: 8px 18px; border-radius: 50px;
+    }
+
+    /* ═══════════════════════════════════════════════════
+       TESTIMONIOS — placeholder carousel
+    ═══════════════════════════════════════════════════ */
+    #testimonios { background: rgba(7,7,13,0.80); padding: 6rem 120px; }
+    .testi-head-row {
+      max-width: 1200px; margin: 0 auto 3rem;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .testi-stars { display: flex; gap: 4px; align-items: center; }
+    .star-icon { color: #f5c518; font-size: 18px; }
+    .testi-carousel-wrap {
+      max-width: 1200px; margin: 0 auto;
+      position: relative; overflow: hidden;
+    }
+    .testi-track {
+      display: flex; gap: 16px;
+      transition: transform 0.8s cubic-bezier(0.4,0,0.2,1);
+    }
+    .testi-card {
+      flex: 0 0 calc(50% - 8px);
+      background: var(--bmw-card);
+      border: 1px solid rgba(255,255,255,0.07);
+      border-radius: 32px; padding: 2.2rem 2rem;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.2);
+    }
+    .testi-card.placeholder {
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      min-height: 200px; text-align: center;
+    }
+    .testi-placeholder-icon { font-size: 2.5rem; margin-bottom: 1rem; opacity: 0.3; }
+    .testi-placeholder-text {
+      font-family: 'Inter', sans-serif; font-size: 14px;
+      color: var(--bmw-muted); line-height: 1.6;
+    }
+    .testi-nav-row {
+      max-width: 1200px; margin: 1.5rem auto 0;
+      display: flex; justify-content: flex-end; gap: 8px;
+    }
+    .testi-nav-btn {
+      width: 44px; height: 44px; border-radius: 50%;
+      background: transparent; border: 1px solid rgba(255,255,255,0.15);
+      color: rgba(255,255,255,0.6); cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+      transition: all 0.2s;
+    }
+    .testi-nav-btn:hover { background: rgba(255,255,255,0.08); color: #fff; }
+    .testi-nav-btn svg { width: 16px; height: 16px; }
+
+    /* ═══════════════════════════════════════════════════
+       PARTNER / CTA — mouse trail + big headline
+    ═══════════════════════════════════════════════════ */
+    #cta-section {
+      background: rgba(11,11,18,0.75); padding: 5rem 120px;
+    }
+    .cta-inner {
+      max-width: 1200px; margin: 0 auto;
+      background: var(--bmw-card);
+      border: 1px solid rgba(255,255,255,0.07);
+      border-radius: 40px; padding: 5rem 4rem;
+      text-align: center; position: relative; overflow: hidden;
+      cursor: default;
+    }
+    .cta-trail-img {
+      position: absolute; pointer-events: none; z-index: 2;
+      width: 120px; height: 80px; object-fit: cover;
+      border-radius: 12px; transform-origin: center;
+      transition: opacity 0.3s, transform 0.3s;
+    }
+    .cta-h2 {
+      font-family: 'BMWTypeNextCondensed', sans-serif;
+      font-size: clamp(2.5rem, 5vw, 4.5rem);
+      font-weight: 700; letter-spacing: -3px; line-height: 1.0;
+      color: #fff; margin-bottom: 1rem; position: relative; z-index: 3;
+    }
+    .cta-h2 .blue { color: var(--bmw-blue-light); }
+    .cta-sub {
+      font-family: 'Inter', sans-serif;
+      font-size: 1rem; color: var(--bmw-muted);
+      margin-bottom: 2.5rem; line-height: 1.7;
+      position: relative; z-index: 3;
+    }
+    .cta-btns {
+      display: flex; align-items: center; justify-content: center;
+      gap: 12px; flex-wrap: wrap; position: relative; z-index: 3;
+    }
+    .btn-cta-primary {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-family: 'Inter', sans-serif; font-size: 15px; font-weight: 600;
+      color: #fff; background: var(--bmw-blue);
+      padding: 14px 28px; border-radius: 50px;
+      box-shadow: 0 1px 2px rgba(28,105,212,.2),0 8px 24px rgba(28,105,212,.35),
+                  inset 0 2px 8px rgba(255,255,255,0.2);
+      transition: all 0.25s; cursor: pointer;
+    }
+    .btn-cta-primary:hover { background: var(--bmw-blue-light); transform: translateY(-2px); box-shadow: 0 12px 40px rgba(28,105,212,0.5); }
+    .btn-cta-ghost {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-family: 'Inter', sans-serif; font-size: 15px; font-weight: 500;
+      color: rgba(255,255,255,0.7);
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.1);
+      padding: 14px 28px; border-radius: 50px;
+      transition: all 0.25s; cursor: pointer;
+    }
+    .btn-cta-ghost:hover { background: rgba(255,255,255,0.1); color: #fff; }
+
+    /* ═══════════════════════════════════════════════════
+       FOOTER v2
+    ═══════════════════════════════════════════════════ */
+    footer {
+      background: rgba(7,7,13,0.90);
+      border-top: 1px solid rgba(255,255,255,0.05);
+      padding: 0;
+    }
+    .footer-main {
+      max-width: 1200px; margin: 0 auto;
+      padding: 3rem 120px 2rem;
+      display: flex; align-items: flex-start;
+      justify-content: space-between; gap: 3rem;
+    }
+    .footer-left { display: flex; flex-direction: column; gap: 1.5rem; }
+    .footer-right {
+      display: flex; gap: 4rem;
+    }
+    .footer-link-col { display: flex; flex-direction: column; gap: 12px; }
+    .footer-link-col a {
+      font-family: 'Inter', sans-serif; font-size: 14px;
+      color: rgba(255,255,255,0.55); transition: color 0.2s;
+    }
+    .footer-link-col a:hover { color: #fff; }
+    .footer-wa-btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 600;
+      color: #fff; background: #25d366;
+      padding: 12px 22px; border-radius: 50px;
+      transition: all 0.25s;
+      box-shadow: 0 4px 16px rgba(37,211,102,0.3);
+    }
+    .footer-wa-btn:hover { background: #1da851; transform: translateY(-2px); }
+    .footer-wa-btn svg { width: 16px; height: 16px; }
+    .copyright-bar {
+      max-width: 1200px; margin: 0 auto;
+      padding: 1.5rem 120px;
+      display: flex; justify-content: space-between; align-items: center;
+      border-top: 1px solid rgba(255,255,255,0.05);
+    }
+    .copyright-bar span {
+      font-family: 'Inter', sans-serif; font-size: 12px;
+      color: rgba(255,255,255,0.25);
+    }
+    .footer-social-row { display: flex; gap: 10px; }
+    .footer-social-row a {
+      width: 34px; height: 34px; border-radius: 8px;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.08);
+      display: flex; align-items: center; justify-content: center;
+      color: rgba(255,255,255,0.45); transition: all 0.2s;
+    }
+    .footer-social-row a:hover { background: rgba(255,255,255,0.12); color: #fff; }
+    .footer-social-row svg { width: 15px; height: 15px; }
+
+    /* ═══════════════════════════════════════════════════
+       FIXED BOTTOM NAV
+    ═══════════════════════════════════════════════════ */
+    .bottom-nav {
+      position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%);
+      z-index: 100; display: flex; align-items: center; gap: 10px;
+      background: rgba(10,10,15,0.9);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 50px; padding: 8px 8px 8px 16px;
+      box-shadow: 0 8px 40px rgba(0,0,0,0.5), 0 0 0 1px rgba(255,255,255,0.05);
+    }
+    .bn-logo { display: flex; align-items: center; gap: 10px; }
+    .bn-logo img { height: 26px; width: auto; opacity: 0.9; }
+    .bn-name {
+      font-family: 'BMWTypeNextCondensed', sans-serif;
+      font-size: 13px; font-weight: 700;
+      color: rgba(255,255,255,0.85); letter-spacing: 0.5px;
+      white-space: nowrap;
+    }
+    .bn-divider { width: 1px; height: 20px; background: rgba(255,255,255,0.12); margin: 0 2px; }
+    .bn-wa {
+      display: inline-flex; align-items: center; gap: 7px;
+      font-family: 'Inter', sans-serif; font-size: 13px; font-weight: 600;
+      color: #fff; background: #25d366;
+      padding: 9px 18px; border-radius: 50px;
+      transition: all 0.2s; white-space: nowrap;
+    }
+    .bn-wa:hover { background: #1da851; }
+    .bn-wa svg { width: 14px; height: 14px; }
+
+    @media (max-width: 768px) {
+      .bottom-nav { padding: 7px 7px 7px 14px; }
+      .bn-name { display: none; }
+      .bn-divider { display: none; }
+    }
+    @media (max-width: 900px) {
+      #quien-soy { padding: 5rem 5%; }
+      .about-grid-v2 { grid-template-columns: 1fr; }
+      .about-photo-col { order: -1; }
+      .about-photo-stack { position: relative; top: auto; }
+      #honeycomb-section { padding: 4rem 5% 5rem; }
+      #financiamiento { padding: 5rem 5%; }
+      .fin-cards-grid { grid-template-columns: 1fr; }
+      #portafolio { padding: 5rem 5%; }
+      #testimonios { padding: 5rem 5%; }
+      #cta-section { padding: 4rem 5%; }
+      .cta-inner { padding: 3rem 2rem; }
+      .footer-main { flex-direction: column; padding: 3rem 5% 2rem; }
+      .footer-right { flex-wrap: wrap; gap: 2rem; }
+      .copyright-bar { padding: 1.5rem 5%; flex-direction: column; gap: 8px; text-align: center; }
+      /* Honeycomb mobile */
+      .honeycomb { transform: scale(0.62); transform-origin: top center; margin-bottom: -8rem; }
+      .hc-row-center { transform: translateX(0); }
+      /* BMW Select mobile */
+      .bsel-grid { grid-template-columns: 1fr; }
+      .bsel-img-col { display: none; }
+      .bsel-stat-row { grid-template-columns: repeat(3,1fr); }
+    }
+
+    /* ═══════════════════════════════════════════════════
+       REQUISITOS DE CONTRATACIÓN
+    ═══════════════════════════════════════════════════ */
+    #requisitos {
+      padding: 6rem 120px;
+      background: rgba(7,7,13,0.88);
+    }
+    .req-head { max-width: 1200px; margin: 0 auto 3.5rem; }
+    .req-grid {
+      max-width: 1200px; margin: 0 auto;
+      display: grid; grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+    }
+    @media (max-width: 900px) { .req-grid { grid-template-columns: repeat(2,1fr); } }
+    .req-card {
+      background: url('PERSONAS/bmw-careers-jobs-fields-it-teaser.jpeg') center/cover no-repeat;
+      border: 1px solid rgba(255,255,255,0.14);
+      border-radius: 20px; padding: 1.6rem 1.4rem;
+      position: relative; overflow: hidden;
+      transition: border-color 0.3s, transform 0.3s;
+    }
+    .req-card::after {
+      content: '';
+      position: absolute; inset: 0;
+      background: linear-gradient(160deg,
+        rgba(8,15,48,0.80) 0%,
+        rgba(5,10,38,0.90) 50%,
+        rgba(3,6,22,0.97) 100%);
+      pointer-events: none;
+    }
+    .req-card > * { position: relative; z-index: 2; }
+    .req-card:hover { border-color: rgba(28,105,212,0.55); transform: translateY(-4px); }
+    .req-card::before {
+      content: '';
+      position: absolute; top: 0; left: 0; right: 0; height: 2px; z-index: 3;
+      background: linear-gradient(90deg, transparent, var(--bmw-blue), transparent);
+      opacity: 0; transition: opacity 0.3s;
+    }
+    .req-card:hover::before { opacity: 1; }
+    .req-num {
+      font-family: 'BMWTypeNextCondensed', sans-serif;
+      font-size: 2rem; font-weight: 700;
+      color: rgba(100,160,255,0.45); line-height: 1;
+      margin-bottom: 0.8rem; letter-spacing: -1px;
+    }
+    .req-icon {
+      width: 40px; height: 40px;
+      background: rgba(28,105,212,0.20);
+      border: 1px solid rgba(28,105,212,0.35);
+      border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+      color: var(--bmw-blue-light);
+      margin-bottom: 1rem;
+    }
+    .req-icon svg { width: 20px; height: 20px; }
+    .req-title {
+      font-family: 'BMWTypeNextCondensed', sans-serif;
+      font-size: 1.05rem; font-weight: 700; color: #ffffff;
+      letter-spacing: -0.2px; margin-bottom: 0.5rem; line-height: 1.2;
+      text-shadow: 0 1px 6px rgba(0,0,0,0.6);
+    }
+    .req-desc {
+      font-family: 'Inter', sans-serif;
+      font-size: 12px; color: rgba(200,215,255,0.80); line-height: 1.6;
+      text-shadow: 0 1px 4px rgba(0,0,0,0.5);
+    }
+    .req-note {
+      max-width: 1200px; margin: 2rem auto 0;
+      display: flex; align-items: center; gap: 10px;
+      font-family: 'Inter', sans-serif; font-size: 12px;
+      color: var(--bmw-muted); line-height: 1.6;
+      background: rgba(28,105,212,0.06);
+      border: 1px solid rgba(28,105,212,0.15);
+      border-radius: 12px; padding: 1rem 1.4rem;
+    }
+    .req-note svg { width: 16px; height: 16px; color: var(--bmw-blue-light); flex-shrink: 0; }
+
+    /* ═══════════════════════════════════════════════════
+       HONEYCOMB SHOWCASE
+    ═══════════════════════════════════════════════════ */
+    #honeycomb-section {
+      padding: 6rem 120px 7rem;
+      background: rgba(232,238,255,0.85);
+      overflow: hidden;
+    }
+    .hc-head { text-align: center; margin-bottom: 4rem; }
+    #honeycomb-section .s-tag { color: var(--bmw-blue); }
+    #honeycomb-section .s-title { color: #0a0f1e; }
+    .honeycomb { display: flex; flex-direction: column; align-items: center; }
+    .hc-row { display: flex; gap: 8px; }
+    .hc-row-center {
+      margin-top: -70px;
+      /* translateX(0) = row-2 is naturally centered between row-1 hexagons */
+      transform: translateX(0);
+    }
+    .hex {
+      width: 306px; height: 265px;
+      clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+      position: relative; overflow: hidden; flex-shrink: 0;
+      background-size: cover; background-position: center;
+      transition: transform 0.45s cubic-bezier(0.4,0,0.2,1), filter 0.45s;
+      cursor: pointer; display: block;
+    }
+    .hex:hover { transform: scale(1.09); filter: brightness(1.18); z-index: 5; }
+    .hex-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(to bottom,
+        rgba(7,7,13,0.20) 0%,
+        rgba(7,7,13,0.72) 60%,
+        rgba(7,7,13,0.94) 100%);
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: flex-end;
+      padding: 0 28px 28px; text-align: center;
+      transition: background 0.35s;
+    }
+    .hex:hover .hex-overlay {
+      background: linear-gradient(to bottom,
+        rgba(7,7,13,0.08) 0%,
+        rgba(7,7,13,0.80) 60%,
+        rgba(7,7,13,0.97) 100%);
+    }
+    .hex-tag {
+      font-family: 'Inter', sans-serif; font-size: 9px; font-weight: 700;
+      color: var(--bmw-blue-light); text-transform: uppercase; letter-spacing: 2.5px;
+      margin-bottom: 5px;
+    }
+    .hex-label {
+      font-family: 'BMWTypeNextCondensed', sans-serif;
+      font-size: 1.15rem; font-weight: 700; color: #fff;
+      letter-spacing: -0.3px; line-height: 1.15;
+    }
+    .hex-pill {
+      margin-top: 9px;
+      display: inline-block;
+      font-family: 'Inter', sans-serif; font-size: 10px; font-weight: 600;
+      color: rgba(255,255,255,0.65);
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.15);
+      padding: 4px 14px; border-radius: 50px;
+      transition: all 0.25s;
+    }
+    .hex:hover .hex-pill {
+      color: #fff; background: rgba(28,105,212,0.35);
+      border-color: var(--bmw-blue);
+    }
+
+    /* ═══════════════════════════════════════════════════
+       AVANT-GARDE FINANCING CARDS — photo-backed
+    ═══════════════════════════════════════════════════ */
+    .fin-card-v2 {
+      border-radius: 28px; padding: 0;
+      position: relative; overflow: hidden;
+      transition: transform 0.38s cubic-bezier(0.4,0,0.2,1);
+      min-height: 440px;
+    }
+    .fin-card-v2:hover { transform: translateY(-8px); }
+    .fin-card-bg {
+      position: absolute; inset: 0;
+      background-size: cover; background-position: center;
+      transition: transform 0.65s cubic-bezier(0.4,0,0.2,1);
+    }
+    .fin-card-v2:hover .fin-card-bg { transform: scale(1.07); }
+    .fin-card-inner {
+      position: relative; z-index: 2;
+      padding: 2.8rem 2.2rem 2.4rem;
+      min-height: 440px;
+      display: flex; flex-direction: column;
+    }
+    /* Dark tint overlay per variant */
+    .fin-card-v2.dark .fin-card-inner {
+      background: linear-gradient(to bottom,
+        rgba(10,20,60,0.65) 0%,
+        rgba(5,12,40,0.92) 55%,
+        rgba(5,10,35,0.98) 100%);
+    }
+    .fin-card-v2.mid .fin-card-inner {
+      background: linear-gradient(to bottom,
+        rgba(7,7,20,0.55) 0%,
+        rgba(7,7,20,0.88) 55%,
+        rgba(7,7,20,0.97) 100%);
+    }
+    .fin-card-v2.light .fin-card-inner {
+      background: linear-gradient(to bottom,
+        rgba(7,7,13,0.50) 0%,
+        rgba(7,7,13,0.85) 55%,
+        rgba(7,7,13,0.97) 100%);
+    }
+    /* Top accent line per variant */
+    .fin-card-v2.dark .fin-card-inner::before {
+      content: '';
+      display: block; height: 2px; margin: -2.8rem -2.2rem 2.4rem;
+      background: linear-gradient(90deg, var(--bmw-blue), var(--bmw-blue-light), var(--bmw-blue));
+    }
+    .fin-card-v2.mid .fin-card-inner::before {
+      content: '';
+      display: block; height: 2px; margin: -2.8rem -2.2rem 2.4rem;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+    }
+    .fin-card-v2.light .fin-card-inner::before {
+      content: '';
+      display: block; height: 2px; margin: -2.8rem -2.2rem 2.4rem;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.15), transparent);
+    }
+    .fin-spacer { flex: 1; }
+
+    /* ═══════════════════════════════════════════════════
+       BMW SELECT — featured financing highlight
+    ═══════════════════════════════════════════════════ */
+    .bmw-select-wrap {
+      max-width: 1200px; margin: 5rem auto 0;
+      background: linear-gradient(135deg,
+        rgba(18,55,140,0.92) 0%,
+        rgba(12,38,108,0.95) 35%,
+        rgba(8,24,80,0.97) 65%,
+        rgba(6,16,60,0.98) 100%);
+      border: 1px solid rgba(60,130,255,0.30);
+      border-radius: 36px; padding: 3.5rem 3rem;
+      position: relative; overflow: hidden;
+      box-shadow: 0 40px 100px rgba(15,50,180,0.22), inset 0 1px 0 rgba(100,160,255,0.14);
+    }
+    .bmw-select-wrap::before {
+      content: '';
+      position: absolute; top: 0; left: 0; right: 0; height: 1px;
+      background: linear-gradient(90deg, transparent 0%, rgba(28,105,212,0.8) 40%, rgba(100,180,255,0.6) 60%, transparent 100%);
+    }
+    .bmw-select-wrap::after {
+      content: '';
+      position: absolute; bottom: -80px; right: -60px;
+      width: 320px; height: 320px; border-radius: 50%;
+      background: radial-gradient(circle, rgba(28,105,212,0.18) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .bsel-header { margin-bottom: 2.5rem; position: relative; z-index: 1; }
+    .bsel-badge {
+      display: inline-flex; align-items: center; gap: 6px;
+      background: rgba(28,105,212,0.18);
+      border: 1px solid rgba(28,105,212,0.4);
+      color: var(--bmw-blue-light);
+      font-family: 'Inter', sans-serif; font-size: 10px; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 2.5px;
+      padding: 5px 14px; border-radius: 50px; margin-bottom: 1rem;
+    }
+    .bsel-badge::before { content: '★'; font-size: 9px; }
+    .bsel-logo-line { display: flex; align-items: baseline; gap: 12px; margin-bottom: 0.8rem; }
+    .bsel-title {
+      font-family: 'BMWTypeNextCondensed', sans-serif;
+      font-size: clamp(2rem, 4vw, 3.2rem); font-weight: 700;
+      background: linear-gradient(135deg, #0a0f2e 0%, #1c3a6e 50%, #1c69d4 100%);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      background-clip: text;
+      letter-spacing: -2px; line-height: 1;
+    }
+    .bsel-by {
+      font-family: 'Inter', sans-serif; font-size: 12px; font-weight: 400;
+      color: var(--bmw-muted); letter-spacing: 0.5px;
+    }
+    .bsel-desc {
+      font-family: 'Inter', sans-serif; font-size: 15px; font-weight: 400;
+      color: rgba(232,232,240,0.65); line-height: 1.7; max-width: 620px;
+    }
+    .bsel-grid {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 4rem; position: relative; z-index: 1;
+    }
+    .bsel-steps { display: flex; flex-direction: column; gap: 0; }
+    .bsel-step {
+      display: flex; gap: 1.2rem; align-items: flex-start;
+      padding: 1.2rem 0; border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    .bsel-step:last-of-type { border-bottom: none; padding-bottom: 0.5rem; }
+    .bsel-step-num {
+      font-family: 'BMWTypeNextCondensed', sans-serif;
+      font-size: 1.6rem; font-weight: 700; color: var(--bmw-blue);
+      line-height: 1; min-width: 36px; opacity: 0.7;
+    }
+    .bsel-step-title {
+      font-family: 'BMWTypeNextCondensed', sans-serif;
+      font-size: 1.05rem; font-weight: 700; color: #fff;
+      letter-spacing: -0.3px; margin-bottom: 4px;
+    }
+    .bsel-step-desc {
+      font-family: 'Inter', sans-serif; font-size: 13px;
+      color: var(--bmw-muted); line-height: 1.6;
+    }
+    .bsel-options {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 8px; margin: 1.2rem 0 1.8rem;
+    }
+    .bsel-opt {
+      display: flex; align-items: center; gap: 8px;
+      font-family: 'Inter', sans-serif; font-size: 12px; font-weight: 500;
+      color: rgba(232,232,240,0.7);
+      background: rgba(28,105,212,0.08);
+      border: 1px solid rgba(28,105,212,0.15);
+      border-radius: 10px; padding: 8px 12px;
+    }
+    .bsel-opt span {
+      color: var(--bmw-blue-light); font-size: 14px; line-height: 1;
+    }
+    .btn-bsel {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--bmw-blue); color: #fff;
+      font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 600;
+      padding: 13px 26px; border-radius: 50px;
+      box-shadow: 0 8px 32px rgba(28,105,212,0.4);
+      transition: all 0.25s; margin-top: 0.5rem;
+    }
+    .btn-bsel:hover { background: var(--bmw-blue-light); transform: translateY(-2px); box-shadow: 0 12px 40px rgba(28,105,212,0.5); }
+    /* Image column */
+    .bsel-img-col { display: flex; flex-direction: column; gap: 1.5rem; }
+    .bsel-img-wrap {
+      border-radius: 22px; overflow: hidden;
+      aspect-ratio: 4/3; position: relative;
+      border: 1px solid rgba(28,105,212,0.2);
+      box-shadow: 0 24px 60px rgba(0,0,0,0.5);
+    }
+    .bsel-img-wrap img {
+      width: 100%; height: 100%; object-fit: cover;
+      transition: transform 0.8s cubic-bezier(0.4,0,0.2,1);
+    }
+    .bmw-select-wrap:hover .bsel-img-wrap img { transform: scale(1.04); }
+    .bsel-img-cap {
+      position: absolute; bottom: 0; left: 0; right: 0;
+      padding: 1.2rem 1.4rem;
+      background: linear-gradient(to top, rgba(7,7,13,0.9) 0%, transparent 100%);
+    }
+    .bsel-cap-tag {
+      font-family: 'Inter', sans-serif; font-size: 10px; font-weight: 700;
+      color: var(--bmw-blue-light); text-transform: uppercase; letter-spacing: 2px;
+      margin-bottom: 4px;
+    }
+    .bsel-cap-name {
+      font-family: 'BMWTypeNextCondensed', sans-serif;
+      font-size: 1.2rem; font-weight: 700; color: #fff; letter-spacing: -0.5px;
+    }
+    .bsel-stat-row {
+      display: grid; grid-template-columns: repeat(3,1fr); gap: 10px;
+    }
+    .bsel-stat {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 14px; padding: 1rem 0.8rem; text-align: center;
+    }
+    .bsel-stat-val {
+      font-family: 'BMWTypeNextCondensed', sans-serif;
+      font-size: 1.4rem; font-weight: 700; color: #fff;
+      letter-spacing: -1px; line-height: 1;
+    }
+    .bsel-stat-label {
+      font-family: 'Inter', sans-serif; font-size: 10px;
+      color: var(--bmw-muted); margin-top: 4px; line-height: 1.3;
+    }
+
+    /* ═══════════════════════════════════════════════════
+       SAAS PREMIUM — SECTION PHOTO BACKGROUNDS + GLASS
+    ═══════════════════════════════════════════════════ */
+
+    /* Keyframes */
+    @keyframes float-a {
+      0%, 100% { transform: translateY(0) scale(1); }
+      50%       { transform: translateY(-28px) scale(1.04); }
+    }
+    @keyframes float-b {
+      0%, 100% { transform: translateY(0) scale(1) rotate(0deg); }
+      50%       { transform: translateY(22px) scale(0.96) rotate(4deg); }
+    }
+    @keyframes pulse-ring {
+      0%   { opacity: 0.6; transform: scale(0.92); }
+      100% { opacity: 0;   transform: scale(1.4); }
+    }
+    @keyframes gradient-shift {
+      0%   { background-position: 0% 50%; }
+      50%  { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    @keyframes shimmer {
+      0%   { transform: translateX(-100%); }
+      100% { transform: translateX(400%); }
+    }
+
+    /* === ORB DECORATIONS === */
+    .orb {
+      position: absolute; border-radius: 50%;
+      pointer-events: none; z-index: 0; filter: blur(70px);
+    }
+    .orb-blue  { background: radial-gradient(circle, rgba(28,105,212,0.30), transparent 70%); animation: float-a 10s ease-in-out infinite; }
+    .orb-purple{ background: radial-gradient(circle, rgba(108,63,232,0.22), transparent 70%); animation: float-b 14s ease-in-out infinite; }
+    .orb-gold  { background: radial-gradient(circle, rgba(200,169,110,0.18), transparent 70%); animation: float-a 18s ease-in-out infinite reverse; }
+
+    /* === SECTION LABELS & HEADINGS (on dark photo backgrounds) === */
+    .s-tag {
+      font-size: 10.5px !important;
+      font-weight: 700 !important;
+      letter-spacing: 2.8px !important;
+      text-transform: uppercase !important;
+      background: linear-gradient(90deg, #3a84f5, #8b5cf6) !important;
+      -webkit-background-clip: text !important;
+      -webkit-text-fill-color: transparent !important;
+      background-clip: text !important;
+      border: none !important;
+      padding: 0 !important;
+      display: inline-block !important;
+    }
+    .s-title {
+      font-size: clamp(2.5rem, 4.8vw, 4.2rem) !important;
+      font-weight: 700 !important;
+      letter-spacing: -2px !important;
+      line-height: 1.04 !important;
+      background: linear-gradient(150deg, #ffffff 0%, #c8dfff 55%, #9ab8ff 100%) !important;
+      -webkit-background-clip: text !important;
+      -webkit-text-fill-color: transparent !important;
+      background-clip: text !important;
+    }
+    .s-desc { color: rgba(220,235,255,0.92) !important; font-size: 1rem !important; line-height: 1.75 !important; }
+
+    /* Gradient divider utility */
+    .grad-sep {
+      height: 1px; border: none; margin: 0;
+      background: linear-gradient(90deg, transparent, rgba(58,132,245,0.35) 30%, rgba(139,92,246,0.35) 70%, transparent);
+    }
+
+    /* === NAV — glass premium === */
+    nav {
+      background: rgba(3,3,18,0.75) !important;
+      backdrop-filter: blur(28px) !important;
+      -webkit-backdrop-filter: blur(28px) !important;
+      border-bottom: 1px solid rgba(255,255,255,0.06) !important;
+    }
+    .nav-name {
+      background: linear-gradient(135deg, #fff 0%, #9ab8ff 100%);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+    }
+    .nav-subtitle { color: rgba(150,180,255,0.75) !important; }
+
+    /* === HERO === */
+    .hero-overlay {
+      background: linear-gradient(
+        165deg,
+        rgba(2,2,18,0.70) 0%,
+        rgba(5,8,35,0.45) 40%,
+        rgba(10,5,30,0.60) 80%,
+        rgba(2,2,15,0.85) 100%) !important;
+    }
+    .hero-h1 {
+      background: linear-gradient(145deg, #ffffff 0%, #d0e8ff 60%, #a0c4ff 100%);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+      filter: drop-shadow(0 0 40px rgba(58,132,245,0.25));
+    }
+    .hero-sub { color: rgba(200,220,255,0.72) !important; }
+    .hero-badge {
+      background: rgba(58,132,245,0.12) !important;
+      border-color: rgba(58,132,245,0.28) !important;
+      color: #7eb8ff !important;
+    }
+    .btn-hero-primary {
+      background: linear-gradient(135deg, #1c69d4 0%, #6c3fe8 100%) !important;
+      box-shadow: 0 4px 24px rgba(28,105,212,0.45), 0 1px 0 rgba(255,255,255,0.15) inset !important;
+      border: none !important;
+    }
+    .btn-hero-primary:hover {
+      background: linear-gradient(135deg, #3a84f5 0%, #8b5cf6 100%) !important;
+      box-shadow: 0 8px 36px rgba(28,105,212,0.60) !important;
+    }
+    .btn-hero-secondary {
+      background: rgba(255,255,255,0.06) !important;
+      border-color: rgba(255,255,255,0.16) !important;
+      backdrop-filter: blur(12px) !important;
+    }
+    .btn-hero-secondary:hover { background: rgba(255,255,255,0.12) !important; }
+    .hstat-num {
+      background: linear-gradient(135deg, #fff, #a0c4ff);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+    }
+
+    /* === MARQUEE — dark strip === */
+    .marquee-section {
+      background: rgba(4,5,20,0.95) !important;
+      border-top: 1px solid rgba(58,132,245,0.12) !important;
+      border-bottom: 1px solid rgba(58,132,245,0.12) !important;
+    }
+
+    /* ═══════════════════════════════════════════════════
+       QUIÉN SOY — LIGHT PEARL (original, no dark override)
+    ═══════════════════════════════════════════════════ */
+    #quien-soy {
+      background: rgba(240,244,255,0.88) !important;
+      position: relative;
+    }
+    /* Restore dark text for light bg */
+    #quien-soy .about-h2-v2 {
+      background: none !important;
+      -webkit-text-fill-color: var(--bmw-dark, #0a0f1e) !important;
+      color: #0a0f1e !important;
+    }
+    #quien-soy .about-h2-v2 .serif-accent {
+      background: linear-gradient(135deg, #1c69d4 0%, #6c3fe8 100%) !important;
+      -webkit-background-clip: text !important;
+      -webkit-text-fill-color: transparent !important;
+      background-clip: text !important;
+    }
+    #quien-soy .about-badge {
+      background: rgba(28,105,212,0.08) !important;
+      border-color: rgba(28,105,212,0.20) !important;
+      color: #1c69d4 !important;
+    }
+    #quien-soy .about-bio-v2 { color: rgba(15,25,60,0.65) !important; }
+    #quien-soy .value-tag-v2 {
+      background: rgba(255,255,255,0.75) !important;
+      border-color: rgba(28,105,212,0.15) !important;
+      color: rgba(15,25,70,0.75) !important;
+      backdrop-filter: blur(8px) !important;
+    }
+    #quien-soy .astat-label { color: #0a0f1e !important; }
+
+    /* Stats cards — white glass on light bg */
+    #quien-soy .astat {
+      background: rgba(255,255,255,0.80) !important;
+      backdrop-filter: blur(20px) !important;
+      -webkit-backdrop-filter: blur(20px) !important;
+      border: 1px solid rgba(28,105,212,0.14) !important;
+      border-radius: 26px !important;
+      box-shadow: 0 8px 30px rgba(28,105,212,0.08), inset 0 1px 0 rgba(255,255,255,0.90) !important;
+    }
+    /* Stats numbers — dark navy gradient (visible on white cards) */
+    #quien-soy .astat-num {
+      background: linear-gradient(135deg, #0a0f1e 0%, #1c3a6e 60%, #2a5cb8 100%) !important;
+      -webkit-background-clip: text !important;
+      -webkit-text-fill-color: transparent !important;
+      background-clip: text !important;
+      font-size: clamp(3.8rem, 5.8vw, 5.4rem) !important;
+    }
+    #quien-soy .astat-num sup { -webkit-text-fill-color: #1c69d4 !important; color: #1c69d4 !important; }
+
+    /* About photo border */
+    .about-photo-main {
+      border: 1px solid rgba(28,105,212,0.22) !important;
+      box-shadow: 0 0 60px rgba(28,105,212,0.10), 0 40px 80px rgba(0,0,0,0.22) !important;
+    }
+
+    /* ═══════════════════════════════════════════════════
+       HONEYCOMB — BMW X6 photo background
+    ═══════════════════════════════════════════════════ */
+    #honeycomb-section {
+      position: relative !important;
+      background-image: url('X6 2026 PISO/PHOTO-2026-01-19-18-54-15.jpg') !important;
+      background-size: cover !important;
+      background-position: center !important;
+      background-attachment: scroll !important;
+      background-color: transparent !important;
+    }
+    #honeycomb-section::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: linear-gradient(180deg,
+        rgba(3,6,30,0.55) 0%,
+        rgba(5,10,45,0.48) 50%,
+        rgba(3,6,30,0.60) 100%);
+      z-index: 0;
+      pointer-events: none;
+    }
+    #honeycomb-section > * { position: relative; z-index: 1; }
+    .hex { transition: transform 0.45s cubic-bezier(0.4,0,0.2,1), filter 0.45s, box-shadow 0.3s !important; }
+    .hex:hover {
+      filter: brightness(1.22) saturate(1.15) !important;
+      box-shadow: 0 0 48px rgba(58,132,245,0.35) !important;
+    }
+
+    /* ═══════════════════════════════════════════════════
+       REQUISITOS — BMW Farrera dealership photo background
+    ═══════════════════════════════════════════════════ */
+    #requisitos {
+      position: relative !important;
+      background-image: url('P90286314-dealer-bmw-farrera-tuxtla-11-2017-2435px.jpg') !important;
+      background-size: cover !important;
+      background-position: center top !important;
+      background-attachment: scroll !important;
+      background-color: transparent !important;
+    }
+    #requisitos::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: linear-gradient(180deg,
+        rgba(4,8,38,0.62) 0%,
+        rgba(6,12,52,0.68) 50%,
+        rgba(4,8,38,0.65) 100%);
+      z-index: 0;
+      pointer-events: none;
+    }
+    #requisitos > * { position: relative; z-index: 1; }
+    .req-card::after {
+      background: linear-gradient(160deg,
+        rgba(6,10,55,0.82) 0%,
+        rgba(4,7,42,0.91) 50%,
+        rgba(2,4,28,0.97) 100%) !important;
+    }
+    .req-num { color: rgba(58,132,245,0.40) !important; }
+    .req-icon {
+      background: rgba(58,132,245,0.12) !important;
+      border-color: rgba(58,132,245,0.22) !important;
+      color: #7eb8ff !important;
+    }
+
+    /* ═══════════════════════════════════════════════════
+       FINANCIAMIENTO — BMW 330e photo background
+    ═══════════════════════════════════════════════════ */
+    #financiamiento {
+      position: relative !important;
+      background-image: url('IMAGENES MEJOR CALIDAD/IMG_3709.JPG') !important;
+      background-size: cover !important;
+      background-position: center !important;
+      background-attachment: scroll !important;
+      background-color: transparent !important;
+    }
+    #financiamiento::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: linear-gradient(180deg,
+        rgba(3,8,45,0.60) 0%,
+        rgba(5,12,60,0.55) 50%,
+        rgba(3,8,45,0.65) 100%);
+      z-index: 0;
+      pointer-events: none;
+    }
+    #financiamiento > * { position: relative; z-index: 1; }
+    .fin-card-v2.dark .fin-card-inner {
+      background: linear-gradient(to bottom,
+        rgba(6,15,70,0.60) 0%,
+        rgba(4,10,50,0.90) 55%,
+        rgba(3,7,38,0.98) 100%) !important;
+    }
+    .fin-name { color: #fff !important; }
+    .fin-tag-v2 {
+      background: rgba(58,132,245,0.10) !important;
+      border-color: rgba(58,132,245,0.18) !important;
+      color: rgba(180,210,255,0.80) !important;
+    }
+    .btn-fin.primary {
+      background: linear-gradient(135deg, #1c69d4 0%, #6c3fe8 100%) !important;
+      color: #fff !important;
+      box-shadow: 0 4px 18px rgba(28,105,212,0.40) !important;
+    }
+    .btn-fin.primary:hover {
+      background: linear-gradient(135deg, #3a84f5 0%, #8b5cf6 100%) !important;
+      box-shadow: 0 8px 28px rgba(28,105,212,0.55) !important;
+    }
+
+    /* === BMW SELECT wrap === */
+    .bmw-select-wrap {
+      background: linear-gradient(145deg,
+        rgba(20,60,155,0.90) 0%,
+        rgba(14,42,120,0.94) 35%,
+        rgba(45,25,130,0.90) 65%,
+        rgba(10,20,80,0.97) 100%) !important;
+      border-color: rgba(80,140,255,0.30) !important;
+      box-shadow:
+        0 40px 100px rgba(15,50,200,0.22),
+        0 0 0 1px rgba(80,140,255,0.10),
+        inset 0 1px 0 rgba(255,255,255,0.12) !important;
+    }
+    .bsel-title {
+      background: linear-gradient(135deg, #ffffff, #a0c8ff);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+    }
+
+    /* ═══════════════════════════════════════════════════
+       PORTAFOLIO — BMW X3 Frozen photo background
+    ═══════════════════════════════════════════════════ */
+    #portafolio {
+      position: relative !important;
+      background-image: url('IMAGENES MEJOR CALIDAD/M4.jpg') !important;
+      background-size: cover !important;
+      background-position: center !important;
+      background-attachment: scroll !important;
+      background-color: transparent !important;
+    }
+    #portafolio::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: linear-gradient(180deg,
+        rgba(3,6,30,0.58) 0%,
+        rgba(5,10,48,0.52) 50%,
+        rgba(3,6,30,0.60) 100%);
+      z-index: 0;
+      pointer-events: none;
+    }
+    #portafolio > * { position: relative; z-index: 1; }
+    .port-item-img-wrap {
+      border: 1px solid rgba(58,132,245,0.12) !important;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.40) !important;
+      border-radius: 26px !important;
+      transition: box-shadow 0.4s, transform 0.4s;
+    }
+    .port-item:hover .port-item-img-wrap {
+      box-shadow: 0 24px 70px rgba(28,105,212,0.20) !important;
+    }
+    .port-item-name {
+      background: linear-gradient(145deg, #ffffff, #c0d8ff);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+    }
+    .port-count {
+      background: linear-gradient(135deg, #3a84f5, #8b5cf6);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+    }
+
+    /* ═══════════════════════════════════════════════════
+       TESTIMONIOS — personas photo background
+    ═══════════════════════════════════════════════════ */
+    #testimonios {
+      position: relative !important;
+      background-image: url('PERSONAS/6cc2d359-77df-4b05-8a8c-eec40c2e2630.jpg') !important;
+      background-size: cover !important;
+      background-position: center !important;
+      background-attachment: scroll !important;
+      background-color: transparent !important;
+    }
+    #testimonios::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: linear-gradient(180deg,
+        rgba(3,6,30,0.60) 0%,
+        rgba(5,10,45,0.55) 50%,
+        rgba(3,6,30,0.62) 100%);
+      z-index: 0;
+      pointer-events: none;
+    }
+    #testimonios > * { position: relative; z-index: 1; }
+    .testi-card { box-shadow: 0 4px 32px rgba(0,0,0,0.30), inset 0 1px 0 rgba(255,255,255,0.07) !important; }
+    .testi-name {
+      background: linear-gradient(135deg, #fff, #c0d8ff);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+    }
+
+    /* === UBICACIÓN MAP === */
+    #ubicacion {
+      background: linear-gradient(180deg, #030315 0%, #02020d 100%) !important;
+    }
+
+    /* ═══════════════════════════════════════════════════
+       CTA — strong blue-purple gradient (no photo)
+    ═══════════════════════════════════════════════════ */
+    #cta-section {
+      background: linear-gradient(135deg,
+        #06104a 0%, #0f1e80 25%,
+        #1a0e6e 50%, #0f1e80 75%,
+        #06104a 100%) !important;
+      position: relative;
+    }
+    #cta-section::before {
+      content: '';
+      position: absolute; inset: 0;
+      background:
+        radial-gradient(ellipse 70% 60% at 20% 50%, rgba(58,132,245,0.18) 0%, transparent 60%),
+        radial-gradient(ellipse 60% 55% at 80% 50%, rgba(108,63,232,0.15) 0%, transparent 60%);
+      pointer-events: none;
+    }
+    #cta-section > * { position: relative; z-index: 1; }
+    .cta-inner {
+      background: linear-gradient(145deg,
+        rgba(58,132,245,0.12) 0%,
+        rgba(108,63,232,0.10) 40%,
+        rgba(58,132,245,0.12) 100%) !important;
+      border: 1px solid rgba(58,132,245,0.22) !important;
+      box-shadow:
+        0 40px 100px rgba(15,50,200,0.25),
+        0 0 0 1px rgba(58,132,245,0.08),
+        inset 0 1px 0 rgba(255,255,255,0.10) !important;
+    }
+    .cta-h2 {
+      background: linear-gradient(150deg, #ffffff 0%, #c8dfff 55%, #9ab8ff 100%) !important;
+      -webkit-background-clip: text !important; -webkit-text-fill-color: transparent !important; background-clip: text !important;
+    }
+    .cta-h2 .blue {
+      background: linear-gradient(135deg, #5aa0ff 0%, #a87ff5 100%) !important;
+      -webkit-background-clip: text !important; -webkit-text-fill-color: transparent !important; background-clip: text !important;
+    }
+    .btn-cta-primary {
+      background: linear-gradient(135deg, #1c69d4 0%, #6c3fe8 100%) !important;
+      box-shadow: 0 4px 22px rgba(28,105,212,0.45), inset 0 1px 0 rgba(255,255,255,0.15) !important;
+      border: none !important;
+    }
+    .btn-cta-primary:hover {
+      background: linear-gradient(135deg, #3a84f5 0%, #8b5cf6 100%) !important;
+      box-shadow: 0 8px 36px rgba(28,105,212,0.58) !important;
+      transform: translateY(-2px) !important;
+    }
+    .btn-cta-ghost {
+      background: rgba(255,255,255,0.07) !important;
+      border-color: rgba(255,255,255,0.18) !important;
+      backdrop-filter: blur(12px) !important;
+    }
+    .btn-cta-ghost:hover { background: rgba(255,255,255,0.14) !important; color: #fff !important; }
+
+    /* ═══════════════════════════════════════════════════
+       CONTACTO — BMW Farrera exterior photo background
+    ═══════════════════════════════════════════════════ */
+    #contacto {
+      position: relative !important;
+      background-image: url('P90286314-dealer-bmw-farrera-tuxtla-11-2017-2435px.jpg') !important;
+      background-size: cover !important;
+      background-position: center bottom !important;
+      background-attachment: scroll !important;
+      background-color: transparent !important;
+    }
+    #contacto::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: linear-gradient(180deg,
+        rgba(4,8,42,0.64) 0%,
+        rgba(6,12,55,0.60) 50%,
+        rgba(4,8,42,0.68) 100%);
+      z-index: 0;
+      pointer-events: none;
+    }
+    #contacto > * { position: relative; z-index: 1; }
+    .contact-tagline {
+      background: linear-gradient(150deg, #ffffff 0%, #c8dfff 55%, #9ab8ff 100%) !important;
+      -webkit-background-clip: text !important; -webkit-text-fill-color: transparent !important; background-clip: text !important;
+    }
+    .contact-tagline .blue {
+      background: linear-gradient(135deg, #3a84f5 0%, #8b5cf6 100%) !important;
+      -webkit-background-clip: text !important; -webkit-text-fill-color: transparent !important; background-clip: text !important;
+    }
+    .contact-method {
+      background: rgba(255,255,255,0.06) !important;
+      border: 1px solid rgba(28,105,212,0.20) !important;
+      backdrop-filter: blur(16px) !important;
+      -webkit-backdrop-filter: blur(16px) !important;
+      border-radius: 22px !important;
+      transition: all 0.30s ease !important;
+    }
+    .contact-method:hover {
+      background: rgba(28,105,212,0.12) !important;
+      border-color: rgba(28,105,212,0.42) !important;
+      transform: translateY(-4px) !important;
+      box-shadow: 0 12px 40px rgba(28,105,212,0.22) !important;
+    }
+    .contact-method .cm-icon {
+      background: linear-gradient(135deg, rgba(28,105,212,0.28) 0%, rgba(28,105,212,0.14) 100%) !important;
+      border-color: rgba(28,105,212,0.42) !important;
+      box-shadow: 0 2px 12px rgba(28,105,212,0.20), inset 0 1px 0 rgba(255,255,255,0.10) !important;
+      color: #6ab8ff !important;
+    }
+    .contact-card {
+      background: rgba(255,255,255,0.05) !important;
+      border: 1px solid rgba(255,255,255,0.10) !important;
+      backdrop-filter: blur(20px) !important;
+      -webkit-backdrop-filter: blur(20px) !important;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.40), inset 0 1px 0 rgba(255,255,255,0.10) !important;
+    }
+    .btn-wa-big {
+      background: linear-gradient(135deg, #1a9e50 0%, #25d366 100%) !important;
+      box-shadow: 0 4px 20px rgba(37,211,102,0.35) !important;
+    }
+    .btn-wa-big:hover {
+      background: linear-gradient(135deg, #25d366 0%, #1fef74 100%) !important;
+      box-shadow: 0 8px 32px rgba(37,211,102,0.48) !important;
+      transform: translateY(-2px) !important;
+    }
+    .btn-secondary-card {
+      background: rgba(255,255,255,0.05) !important;
+      border-color: rgba(255,255,255,0.10) !important;
+      backdrop-filter: blur(8px) !important;
+    }
+    .btn-secondary-card:hover { background: rgba(255,255,255,0.10) !important; }
+
+    /* === BOTTOM NAV — enhanced glass === */
+    .bottom-nav {
+      background: rgba(4,4,18,0.88) !important;
+      border-color: rgba(58,132,245,0.16) !important;
+      box-shadow:
+        0 8px 40px rgba(0,0,0,0.55),
+        0 0 0 1px rgba(58,132,245,0.08),
+        inset 0 1px 0 rgba(255,255,255,0.07) !important;
+    }
+    .bn-wa-btn {
+      background: linear-gradient(135deg, #1c69d4 0%, #6c3fe8 100%) !important;
+      box-shadow: 0 2px 12px rgba(28,105,212,0.40) !important;
+    }
+
+    /* === FOOTER === */
+    footer {
+      background: rgba(2,2,10,0.97) !important;
+      border-top: 1px solid rgba(58,132,245,0.10) !important;
+      backdrop-filter: blur(20px) !important;
+    }
+
+    /* === GLOBAL SHIMMER on fin-card-bg === */
+    .fin-card-v2::after {
+      content: '';
+      position: absolute; top: 0; left: -100%; width: 30%; height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.04), transparent);
+      animation: shimmer 5s ease-in-out infinite;
+      z-index: 3; pointer-events: none;
+    }
+
+    /* ═══════════════════════════════════════════════════
+       CONTRASTE — texto legible sobre fondos con foto
+    ═══════════════════════════════════════════════════ */
+
+    /* Descripciones de items en portafolio */
+    .port-item-desc {
+      color: rgba(210,228,255,0.88) !important;
+    }
+
+    /* Subtítulo en sección CTA */
+    .cta-sub {
+      color: rgba(215,230,255,0.90) !important;
+    }
+
+    /* Dirección/info pequeña en CTA */
+    #cta-section p[style*="rgba(255,255,255,0.2)"],
+    #cta-section .cta-inner > p {
+      color: rgba(255,255,255,0.65) !important;
+    }
+
+    /* Botón fantasma — texto visible */
+    .btn-cta-ghost {
+      color: rgba(220,235,255,0.92) !important;
+    }
+
+    /* Nota disclaimer de Requisitos */
+    .req-note {
+      color: rgba(200,220,255,0.85) !important;
+    }
+
+    /* Descripción en sección Contacto */
+    .contact-sub {
+      color: rgba(210,228,255,0.88) !important;
+    }
+
+    /* ── FORMULARIO DE CONTACTO ──────────────────────── */
+    .contact-form-wrap {
+      margin-top: 4rem;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.09);
+      border-radius: 18px;
+      padding: 3rem 3.5rem;
+      position: relative;
+      z-index: 1;
+      backdrop-filter: blur(12px);
+    }
+    .contact-form-wrap h3 {
+      font-family: 'BMW Helvetica', 'Helvetica Neue', Arial, sans-serif;
+      font-size: 1.45rem;
+      font-weight: 700;
+      color: #fff;
+      margin: 0 0 0.4rem;
+      letter-spacing: -0.01em;
+    }
+    .cf-sub {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.92rem;
+      color: rgba(210,228,255,0.72);
+      margin: 0 0 2rem;
+    }
+    .cf-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem 1.4rem;
+    }
+    .cf-grid .cf-full { grid-column: 1 / -1; }
+    .cf-field {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .cf-field label {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: rgba(200,220,255,0.80);
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+    .cf-field input,
+    .cf-field select,
+    .cf-field textarea {
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 10px;
+      color: #fff;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.95rem;
+      padding: 0.75rem 1rem;
+      outline: none;
+      transition: border-color 0.2s, background 0.2s;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    .cf-field select option { background: #0a0f2e; color: #fff; }
+    .cf-field input::placeholder,
+    .cf-field textarea::placeholder { color: rgba(255,255,255,0.28); }
+    .cf-field input:focus,
+    .cf-field select:focus,
+    .cf-field textarea:focus {
+      border-color: rgba(28,105,212,0.70);
+      background: rgba(28,105,212,0.08);
+    }
+    .cf-field textarea { resize: vertical; min-height: 110px; }
+    .btn-cf-submit {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: linear-gradient(135deg, #1c69d4 0%, #1a56c4 100%);
+      color: #fff;
+      font-family: 'BMW Helvetica', 'Helvetica Neue', Arial, sans-serif;
+      font-size: 0.95rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      border: none;
+      border-radius: 10px;
+      padding: 0.85rem 2rem;
+      cursor: pointer;
+      transition: opacity 0.2s, transform 0.15s;
+      margin-top: 0.5rem;
+    }
+    .btn-cf-submit:hover { opacity: 0.88; transform: translateY(-1px); }
+    .btn-cf-submit:disabled { opacity: 0.5; cursor: not-allowed; transform: none; }
+    .cf-status {
+      margin-top: 1rem;
+      padding: 0.85rem 1.2rem;
+      border-radius: 10px;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.9rem;
+      display: none;
+    }
+    .cf-status.ok {
+      background: rgba(34,197,94,0.12);
+      border: 1px solid rgba(34,197,94,0.30);
+      color: #4ade80;
+      display: block;
+    }
+    .cf-status.err {
+      background: rgba(239,68,68,0.12);
+      border: 1px solid rgba(239,68,68,0.30);
+      color: #f87171;
+      display: block;
+    }
+    @media(max-width:640px) {
+      .contact-form-wrap { padding: 2rem 1.4rem; }
+      .cf-grid { grid-template-columns: 1fr; }
+      .cf-grid .cf-full { grid-column: 1; }
+    }
+
+    /* ═══════════════════════════════════════════════════
+       OPTIMIZACIÓN MÓVIL — teléfono vertical
+       Este bloque va al final para sobreescribir cualquier
+       regla previa que afecte la vista en móvil.
+    ═══════════════════════════════════════════════════ */
+
+    /* ── GLOBAL: padding de secciones en móvil ── */
+    @media (max-width: 900px) {
+      #requisitos      { padding: 4rem 5% !important; }
+      #testimonios     { padding: 4rem 5% !important; }
+      #financiamiento  { padding: 4rem 5% !important; }
+      #portafolio      { padding: 4rem 5% !important; }
+      #quien-soy       { padding: 4rem 5% !important; }
+      #honeycomb-section { padding: 3.5rem 5% 4rem !important; }
+      #cta-section     { padding: 3.5rem 5% !important; }
+      #contacto        { padding: 4rem 5% !important; }
+      #faq             { padding: 4rem 5% !important; }
+    }
+
+    /* ── REQUISITOS: 2 col en tablet, 1 col en teléfono ── */
+    @media (max-width: 900px) {
+      .req-grid { grid-template-columns: repeat(2, 1fr) !important; gap: 12px !important; }
+    }
+    @media (max-width: 520px) {
+      .req-grid { grid-template-columns: 1fr !important; }
+      .req-card { padding: 1.4rem 1.2rem !important; }
+    }
+
+    /* ── TESTIMONIOS: layout en 1 columna en móvil ── */
+    @media (max-width: 768px) {
+      .testi-layout { grid-template-columns: 1fr !important; gap: 20px !important; width: 100% !important; overflow: hidden !important; }
+      .testi-layout > * { min-width: 0 !important; }
+      .testi-carousel-wrap { min-width: 0 !important; overflow: hidden !important; }
+      .testi-track { min-width: 0 !important; }
+      .testi-card { min-width: 0 !important; }
+      .testi-form-panel { min-width: 0 !important; width: 100% !important; box-sizing: border-box !important; }
+      .testi-form-sub { overflow-wrap: break-word !important; word-break: break-word !important; }
+      .testi-head-row { flex-direction: column !important; gap: 0.8rem !important; align-items: flex-start !important; }
+      .testi-nav-row { margin-top: 1.2rem !important; }
+    }
+
+    /* ── PORTAFOLIO: ajustes en móvil ── */
+    @media (max-width: 600px) {
+      .port-item-meta { padding-left: 0 !important; }
+      .port-item-img-wrap { aspect-ratio: 4/3 !important; }
+      .port-section-head { flex-direction: column !important; gap: 0.8rem !important; align-items: flex-start !important; }
+      .port-item { margin-bottom: 3.5rem !important; }
+    }
+
+    /* ── BMW SELECT: columna única, ocultar blueprint en móvil ── */
+    @media (max-width: 900px) {
+      .bsel-grid { grid-template-columns: 1fr !important; gap: 2rem !important; }
+      .bsel-img-col { display: none !important; }
+      .bsel-stat-row { grid-template-columns: repeat(3, 1fr) !important; margin-top: 1.5rem !important; }
+      .fin-cards-grid { grid-template-columns: 1fr !important; gap: 1rem !important; }
+    }
+
+    /* ── HONEYCOMB: escala reducida en teléfono ── */
+    @media (max-width: 520px) {
+      .honeycomb { transform: scale(0.48) !important; transform-origin: top center !important; margin-bottom: -16rem !important; }
+    }
+
+    /* ── HERO: ajuste tipografía en pantallas muy pequeñas ── */
+    @media (max-width: 430px) {
+      .hero-h1 { font-size: 32px !important; letter-spacing: -1px !important; }
+      .hero-sub { font-size: 0.88rem !important; }
+      .hero-badge-row { flex-wrap: wrap !important; gap: 6px !important; }
+      .badge-sep { display: none !important; }
+    }
+
+    /* ── FAQ: padding reducido en móvil ── */
+    @media (max-width: 600px) {
+      .faq-inner { padding: 0 !important; }
+      .faq-item summary { padding: 16px 18px !important; font-size: 0.90rem !important; }
+      .faq-body { padding: 0 18px 16px 18px !important; font-size: 0.88rem !important; }
+    }
+
+    /* ── CONTACTO: formulario en móvil ── */
+    @media (max-width: 600px) {
+      .contact-wrap { grid-template-columns: 1fr !important; }
+      .contact-card { max-width: 100% !important; }
+      .cf-grid { grid-template-columns: 1fr !important; }
+    }
+
+    /* ── FOOTER: móvil ── */
+    @media (max-width: 600px) {
+      .footer-main { flex-direction: column !important; padding: 2.5rem 5% 1.5rem !important; gap: 2rem !important; }
+      .footer-right { flex-direction: column !important; gap: 1.5rem !important; }
+      .copyright-bar { flex-direction: column !important; gap: 6px !important; text-align: center !important; padding: 1rem 5% !important; font-size: 0.75rem !important; }
+    }
+
+    /* ── BARRA NAV inferior: texto legible en móvil ── */
+    @media (max-width: 480px) {
+      .bottom-nav { max-width: 92vw !important; padding: 8px 10px 8px 14px !important; }
+      .bn-wa-btn { font-size: 0.82rem !important; padding: 9px 14px !important; }
+    }
+
+    /* ── VISITANOS: horarios en columna en móvil ── */
+    @media (max-width: 600px) {
+      div[style*="display:flex"][style*="gap:1rem"] { flex-wrap: wrap !important; justify-content: center !important; }
+    }
+
+    /* Scrollbar — BMW blue tinted */
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: #070714; }
+    ::-webkit-scrollbar-thumb {
+      background: linear-gradient(180deg, #1c69d4, #6c3fe8);
+      border-radius: 6px;
+    }
+
+    /* ═══════════════════════════════════════════════════
+       LIQUID GLASS UTILITY
+    ═══════════════════════════════════════════════════ */
+    .liquid-glass {
+      background: rgba(255,255,255,0.015);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.10), 0 8px 40px rgba(0,0,0,0.25);
+      position: relative;
+      overflow: hidden;
+    }
+    .liquid-glass::before {
+      content: '';
+      position: absolute; inset: 0;
+      border-radius: inherit; padding: 1px;
+      background: linear-gradient(180deg,
+        rgba(255,255,255,0.38) 0%, rgba(255,255,255,0.10) 22%,
+        rgba(255,255,255,0) 42%, rgba(255,255,255,0) 58%,
+        rgba(255,255,255,0.10) 78%, rgba(255,255,255,0.38) 100%);
+      -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+      pointer-events: none; z-index: 1;
+    }
+
+    /* ═══════════════════════════════════════════════════
+       TESTIMONIOS REDESIGN — dark liquid glass
+    ═══════════════════════════════════════════════════ */
+    #testimonios {
+      background: linear-gradient(180deg, #04040c 0%, #060813 100%);
+      padding: 6rem 120px; position: relative; overflow: hidden;
+    }
+    #testimonios > .testi-glow-a {
+      position: absolute; top: -180px; left: -120px;
+      width: 560px; height: 560px; border-radius: 50%;
+      background: radial-gradient(circle, rgba(28,105,212,0.09) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    #testimonios > .testi-glow-b {
+      position: absolute; bottom: -120px; right: -80px;
+      width: 440px; height: 440px; border-radius: 50%;
+      background: radial-gradient(circle, rgba(90,50,220,0.07) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .testi-layout {
+      max-width: 1200px; margin: 0 auto;
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 28px; align-items: start;
+    }
+    /* One card visible at a time */
+    .testi-carousel-wrap { position: relative; overflow: hidden; border-radius: 24px; }
+    .testi-track { display: flex; transition: transform 0.7s cubic-bezier(0.4,0,0.2,1); }
+    .testi-card {
+      flex: 0 0 100%;
+      border-radius: 24px; padding: 2rem;
+      min-height: 200px;
+      background: none;
+      border: none;
+      box-shadow: none;
+    }
+    .testi-card-author {
+      display: flex; align-items: center; gap: 12px; margin-bottom: 0.9rem;
+    }
+    .testi-avatar {
+      width: 42px; height: 42px; border-radius: 50%; flex-shrink: 0;
+      background: linear-gradient(135deg, var(--bmw-blue), #6c5ce7);
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'BMWTypeNextCondensed', sans-serif;
+      font-size: 1.1rem; font-weight: 700; color: #fff;
+    }
+    .testi-name {
+      font-family: 'BMWTypeNextCondensed', sans-serif;
+      font-size: 1rem; font-weight: 700; color: #fff;
+    }
+    .testi-date {
+      font-family: 'Inter', sans-serif;
+      font-size: 11px; color: rgba(255,255,255,0.32); margin-top: 2px;
+    }
+    .testi-rating { display: flex; gap: 2px; margin-bottom: 0.8rem; }
+    .testi-rating .star { color: #f5c518; font-size: 14px; }
+    .testi-rating .star.empty { color: rgba(255,255,255,0.14); }
+    .testi-quote {
+      font-family: 'Inter', sans-serif; font-size: 14px;
+      color: rgba(255,255,255,0.68); line-height: 1.65; font-style: italic;
+    }
+
+    /* Testimonial form panel */
+    .testi-form-panel { border-radius: 28px; padding: 2.2rem; }
+    .testi-form-title {
+      font-family: 'BMWTypeNextCondensed', sans-serif;
+      font-size: 1.5rem; font-weight: 700; color: #fff;
+      margin-bottom: 0.3rem; letter-spacing: -0.5px;
+    }
+    .testi-form-sub {
+      font-family: 'Inter', sans-serif; font-size: 13px;
+      color: rgba(255,255,255,0.38); margin-bottom: 1.5rem; line-height: 1.55;
+    }
+    .testi-star-row { display: flex; gap: 5px; margin-bottom: 1.3rem; }
+    .testi-star-btn {
+      background: none; border: none; cursor: pointer;
+      font-size: 26px; color: rgba(255,255,255,0.16);
+      transition: color 0.15s, transform 0.15s; padding: 0; line-height: 1;
+    }
+    .testi-star-btn:hover, .testi-star-btn.active { color: #f5c518; transform: scale(1.18); }
+    .testi-field {
+      font-family: 'Inter', sans-serif; font-size: 14px;
+      color: rgba(255,255,255,0.85);
+      background: rgba(255,255,255,0.045);
+      border: 1px solid rgba(255,255,255,0.09);
+      border-radius: 14px; padding: 12px 16px; width: 100%;
+      outline: none; transition: border-color 0.2s; margin-bottom: 10px;
+    }
+    .testi-field::placeholder { color: rgba(255,255,255,0.26); }
+    .testi-field:focus { border-color: rgba(28,105,212,0.55); background: rgba(255,255,255,0.06); }
+    textarea.testi-field { resize: none; min-height: 96px; line-height: 1.55; }
+    .btn-testi-submit {
+      width: 100%; padding: 13px 20px;
+      font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 600;
+      color: #fff; background: var(--bmw-blue);
+      border: none; border-radius: 14px; cursor: pointer;
+      transition: all 0.22s; margin-top: 4px;
+      display: flex; align-items: center; justify-content: center; gap: 8px;
+      box-shadow: 0 4px 20px rgba(28,105,212,0.30);
+    }
+    .btn-testi-submit:hover { background: var(--bmw-blue-light); transform: translateY(-1px); box-shadow: 0 6px 28px rgba(28,105,212,0.45); }
+    .testi-success {
+      display: none; text-align: center; padding: 2rem 1.5rem;
+      font-family: 'Inter', sans-serif; font-size: 14px;
+      color: rgba(255,255,255,0.65); line-height: 1.6;
+    }
+    .testi-success .check-icon {
+      font-size: 2.8rem; margin-bottom: 0.6rem; display: block; color: #3a84f5;
+    }
+
+    /* CTA section — deeper dark */
+    #cta-section { background: linear-gradient(180deg, #04040c 0%, #050611 100%); padding: 5rem 120px; }
+    .cta-inner {
+      max-width: 1200px; margin: 0 auto;
+      border-radius: 40px; padding: 5rem 4rem;
+      text-align: center; position: relative; overflow: hidden;
+      cursor: default;
+    }
+
+  </style>
+</head>
+<body>
+
+<!-- ══ HERO ══════════════════════════════════════════ -->
+<section id="hero">
+
+  <!-- Video Background -->
+  <div class="video-container">
+    <video id="bgVideo" muted playsinline autoplay>
+      <source src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260329_050842_be71947f-f16e-4a14-810c-06e83d23ddb5.mp4" type="video/mp4">
+    </video>
+    <div class="video-overlay"></div>
+  </div>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-logo-wrap">
+      <img class="nav-bmw-logo" src="LOGOS OFICIALES BMW/BMW LOGO 2020_Mesa de trabajo 1 copia.png" alt="BMW" />
+      <div class="nav-name-block">
+        <div class="nav-name-main">Zeus Cervantes</div>
+        <div class="nav-name-sub">BMW Certified Sales Executive</div>
+      </div>
+    </div>
+
+    <ul class="nav-links-list">
+      <li><a href="#quien-soy">Sobre mí</a></li>
+      <li><a href="#financiamiento">Financiamiento</a></li>
+      <li><a href="#portafolio">Portafolio</a></li>
+      <li><a href="#ubicacion">Visítanos</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <a href="tel:+529616175800" class="btn-nav-ghost">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="14" height="14"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+        Llamar
+      </a>
+      <a href="https://wa.me/529982140024" target="_blank" rel="noopener" class="btn-nav-solid">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.121 1.535 5.845L.057 23.5l5.797-1.52A11.946 11.946 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.9a9.877 9.877 0 0 1-5.031-1.38l-.361-.214-3.44.902.918-3.352-.235-.374A9.864 9.864 0 0 1 2.1 12C2.1 6.53 6.53 2.1 12 2.1c5.47 0 9.9 4.43 9.9 9.9 0 5.47-4.43 9.9-9.9 9.9z"/></svg>
+        WhatsApp
+      </a>
+    </div>
+  </nav>
+
+  <!-- Hero Content -->
+  <div class="hero-content">
+    <!-- Badge row -->
+    <div class="hero-badge-row">
+      <div class="badge-dark">
+        <svg class="badge-star" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/>
+        </svg>
+        14 años en BMW
+      </div>
+      <div class="badge-sep"></div>
+      <div class="badge-light">Certificado BMW Group · Chiapas</div>
+    </div>
+
+    <!-- Headline -->
+    <h1 class="hero-h1">Tu asesor BMW<br><span class="accent">de confianza</span></h1>
+
+    <!-- Dealership title -->
+    <div style="font-family:'BMW Type Next Pro','Inter',sans-serif; font-size:clamp(2rem,4.5vw,3.8rem); font-weight:800; letter-spacing:-0.01em; line-height:1; margin:0.3rem 0 1.2rem; background:linear-gradient(160deg,#0a0f1e 0%,#1c3060 45%,#0a0f1e 100%); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; filter:drop-shadow(0 2px 8px rgba(180,210,255,0.35));">BMW Farrera Chiapas</div>
+
+    <!-- Subtitle -->
+    <p class="hero-sub">
+      17 años en la industria. Soluciones financieras claras, asesoría premium personalizada y una experiencia que supera expectativas.
+    </p>
+
+    <!-- Contact Box (adapted from search box) -->
+    <div class="contact-box-wrap">
+      <!-- Top row -->
+      <div class="cbox-top">
+        <div class="cbox-top-left">
+          <span class="cbox-cert-badge">BMW Certified</span>
+          Zeus Cervantes · Ejecutivo de Ventas
+        </div>
+        <div class="cbox-top-right">
+          <svg class="cbox-ai-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.091z"/>
+          </svg>
+          Respuesta inmediata
+        </div>
+      </div>
+
+      <!-- Main CTA -->
+      <div class="cbox-main">
+        <div class="cbox-tagline">
+          ¿Listo para tu próximo <span>BMW</span>?<br>
+          <span style="font-size:14px; font-weight:400; color:rgba(255,255,255,0.5); letter-spacing:0;">Escríbeme ahora — sin compromisos.</span>
+        </div>
+        <a href="https://wa.me/529982140024?text=Hola%20Zeus%2C%20me%20gustar%C3%ADa%20recibir%20asesor%C3%ADa%20sobre%20veh%C3%ADculos%20BMW." target="_blank" rel="noopener" class="cbox-submit-btn" title="Abrir WhatsApp">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.121 1.535 5.845L.057 23.5l5.797-1.52A11.946 11.946 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.9a9.877 9.877 0 0 1-5.031-1.38l-.361-.214-3.44.902.918-3.352-.235-.374A9.864 9.864 0 0 1 2.1 12C2.1 6.53 6.53 2.1 12 2.1c5.47 0 9.9 4.43 9.9 9.9 0 5.47-4.43 9.9-9.9 9.9z"/></svg>
+        </a>
+      </div>
+
+      <!-- Bottom actions -->
+      <div class="cbox-bottom">
+        <div class="cbox-actions">
+          <button class="cbox-action-btn" onclick="window.location.href='tel:+529616175800'">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+            Llamar
+          </button>
+          <button class="cbox-action-btn" onclick="window.location.href='mailto:zeus.cervantes@bmwchiapas.mx'">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+            Correo
+          </button>
+          <button class="cbox-action-btn" onclick="document.getElementById('portafolio').scrollIntoView({behavior:'smooth'})">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+            Portafolio
+          </button>
+        </div>
+        <span class="cbox-counter">+52 998 214 0024</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Stats Bar -->
+  <div class="hero-stats-bar">
+    <div class="hstat">
+      <div class="hstat-num">17<sup>+</sup></div>
+      <div class="hstat-label">Años en la<br>industria</div>
+    </div>
+    <div class="hstat">
+      <div class="hstat-num">14<sup>+</sup></div>
+      <div class="hstat-label">Años en<br>BMW</div>
+    </div>
+    <div class="hstat">
+      <div class="hstat-num">100<sup>%</sup></div>
+      <div class="hstat-label">Certificado<br>BMW Group</div>
+    </div>
+    <div class="hstat">
+      <div class="hstat-num">∞</div>
+      <div class="hstat-label">Compromiso<br>con el cliente</div>
+    </div>
+  </div>
+
+</section>
+
+
+<!-- ══ MARQUEE ═════════════════════════════════════════ -->
+<div class="marquee-section">
+  <div style="padding:20px 0; overflow:hidden;">
+    <div class="marquee-track">
+        <img src="X6 2026 PISO/PHOTO-2026-01-19-18-54-13.jpg" alt="BMW X6 2026" class="marquee-img" loading="lazy" />
+        <img src="BMW X3 BLANCA/PHOTO-2026-01-23-11-32-51.jpg" alt="BMW X3" class="marquee-img" loading="lazy" />
+        <img src="X3 30 FROZEN/PHOTO-2026-03-18-16-34-06.jpg" alt="BMW X3 Frozen" class="marquee-img" loading="lazy" />
+        <img src="X1 18 BLANCA/PHOTO-2025-06-02-12-24-12.jpg" alt="BMW X1" class="marquee-img" loading="lazy" />
+        <img src="118 SKY 2025/PHOTO-2025-08-15-10-55-32.jpg" alt="BMW 118 SKY" class="marquee-img" loading="lazy" />
+        <img src="330e JAHRE/WhatsApp Image 2026-03-10 at 12.28.19 PM.jpeg" alt="BMW 330e" class="marquee-img" loading="lazy" />
+        <img src="X6 2026 PISO/PHOTO-2026-01-19-18-54-13.jpg" alt="BMW X6 2026" class="marquee-img" loading="lazy" />
+        <img src="BMW X3 BLANCA/PHOTO-2026-01-23-11-32-51.jpg" alt="BMW X3" class="marquee-img" loading="lazy" />
+        <img src="X3 30 FROZEN/PHOTO-2026-03-18-16-34-06.jpg" alt="BMW X3 Frozen" class="marquee-img" loading="lazy" />
+        <img src="X1 18 BLANCA/PHOTO-2025-06-02-12-24-12.jpg" alt="BMW X1" class="marquee-img" loading="lazy" />
+        <img src="118 SKY 2025/PHOTO-2025-08-15-10-55-32.jpg" alt="BMW 118 SKY" class="marquee-img" loading="lazy" />
+        <img src="330e JAHRE/WhatsApp Image 2026-03-10 at 12.28.19 PM.jpeg" alt="BMW 330e" class="marquee-img" loading="lazy" />
+    </div>
+  </div>
+</div>
+
+<!-- ══ QUIÉN SOY ════════════════════════════════════ -->
+<section id="quien-soy" style="position:relative;overflow:hidden;">
+  <div class="orb orb-blue"  style="width:520px;height:520px;top:-120px;right:-140px;opacity:0.55;"></div>
+  <div class="orb orb-purple" style="width:380px;height:380px;bottom:-80px;left:-100px;opacity:0.40;"></div>
+  <div class="about-grid-v2" style="position:relative;z-index:1;">
+
+    <div class="about-text-col">
+      <div class="about-badge fiu" style="animation-delay:0.1s">
+        ★ BMW Certified Sales Executive
+      </div>
+      <h2 class="about-h2-v2 fiu" style="animation-delay:0.2s">
+        17 años<br>construyendo<br><span class="serif-accent">confianza.</span>
+      </h2>
+      <div class="about-cert-pill fiu" style="animation-delay:0.25s">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg>
+        Certificado BMW Group · Chiapas
+      </div>
+      <div class="about-bio-v2 fiu" style="animation-delay:0.3s">
+        <p>Con 17 años en el sector automotriz y 14 dentro de BMW, mi filosofía de trabajo se basa en la cercanía, la confianza y el compromiso genuino con cada cliente.</p>
+        <p>Mi labor va más allá de vender un vehículo: consiste en construir una relación a largo plazo respaldada por conocimiento técnico, soluciones financieras claras y un acompañamiento personalizado en cada etapa del proceso.</p>
+        <p>Cada cliente merece una experiencia premium — desde la primera consulta hasta la entrega de su BMW.</p>
+      </div>
+      <div class="about-values-v2 fiu" style="animation-delay:0.35s">
+        <span class="value-tag-v2">Cercanía</span>
+        <span class="value-tag-v2">Confianza</span>
+        <span class="value-tag-v2">Resultados</span>
+        <span class="value-tag-v2">Experiencia Premium</span>
+        <span class="value-tag-v2">Relación a largo plazo</span>
+      </div>
+      <div class="about-stats-v2 fiu" style="animation-delay:0.4s">
+        <div class="astat">
+          <div class="astat-num">17<sup>+</sup></div>
+          <div class="astat-label">Años en la industria automotriz</div>
+        </div>
+        <div class="astat">
+          <div class="astat-num">14<sup>+</sup></div>
+          <div class="astat-label">Años dentro de BMW</div>
+        </div>
+        <div class="astat">
+          <div class="astat-num">100<sup>%</sup></div>
+          <div class="astat-label">Certificado BMW Group</div>
+        </div>
+        <div class="astat">
+          <div class="astat-num">∞</div>
+          <div class="astat-label">Compromiso con el cliente</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="about-photo-col fiu" style="animation-delay:0.2s">
+      <div class="about-photo-stack">
+        <div class="about-photo-main">
+          <img src="PERSONAS/IMG_5312 5.jpg" alt="Zeus Cervantes — BMW Certified Sales Executive" loading="lazy" />
+        </div>
+        <div class="about-photo-dealer">
+          <img src="P90286314-dealer-bmw-farrera-tuxtla-11-2017-2435px.jpg" alt="BMW Farrera Tuxtla Gutiérrez" loading="lazy" />
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══ HONEYCOMB SHOWCASE ══════════════════════════════ -->
+<section id="honeycomb-section">
+  <div class="hc-head fiu">
+    <span class="s-tag">Mi propuesta de valor</span>
+    <h2 class="s-title">Todo lo que necesitas<br>en un solo lugar</h2>
+  </div>
+  <div class="honeycomb">
+    <!-- Row 1 — 3 hexágonos -->
+    <div class="hc-row">
+      <a href="#requisitos" class="hex fiu" style="background-image:url('PERSONAS/bmw-careers-jobs-fields-it-teaser.jpeg');animation-delay:0.1s">
+        <div class="hex-overlay">
+          <span class="hex-tag">BMW Financial Services</span>
+          <span class="hex-label">Requisitos de<br>contratación</span>
+          <span class="hex-pill">Ver requisitos →</span>
+        </div>
+      </a>
+      <a href="#financiamiento" class="hex fiu" style="background-image:url('PERSONAS/corporate-sales-overview_for-whom_professionals_03.webp');animation-delay:0.15s">
+        <div class="hex-overlay">
+          <span class="hex-tag">Financiamiento</span>
+          <span class="hex-label">Soluciones<br>a tu medida</span>
+          <span class="hex-pill">Ver opciones →</span>
+        </div>
+      </a>
+      <a href="#portafolio" class="hex fiu" style="background-image:url('X6 2026 PISO/PHOTO-2026-01-19-18-54-13.jpg');animation-delay:0.2s">
+        <div class="hex-overlay">
+          <span class="hex-tag">Portafolio</span>
+          <span class="hex-label">Modelos<br>BMW</span>
+          <span class="hex-pill">Ver modelos →</span>
+        </div>
+      </a>
+    </div>
+    <!-- Row 2 — 2 hexágonos centrados -->
+    <div class="hc-row hc-row-center">
+      <a href="#financiamiento" class="hex fiu" style="background-image:url('PERSONAS/financial_service_leasing_more-fs_insurance.webp');animation-delay:0.25s">
+        <div class="hex-overlay">
+          <span class="hex-tag">Producto</span>
+          <span class="hex-label">BMW SELECT</span>
+          <span class="hex-pill">Conocer plan →</span>
+        </div>
+      </a>
+      <a href="#ubicacion" class="hex fiu" style="background-image:url('P90286314-dealer-bmw-farrera-tuxtla-11-2017-2435px.jpg');animation-delay:0.3s">
+        <div class="hex-overlay">
+          <span class="hex-tag">Concesionario</span>
+          <span class="hex-label">BMW Farrera<br>Tuxtla</span>
+          <span class="hex-pill">Ver ubicación →</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<hr class="grad-sep">
+<!-- ══ REQUISITOS DE CONTRATACIÓN ══════════════════════ -->
+<section id="requisitos">
+  <div class="req-head fiu">
+    <span class="s-tag">BMW Financial Services</span>
+    <h2 class="s-title">Requisitos de contratación</h2>
+    <p class="s-desc">Documentos necesarios para acceder a BMW SELECT, Crédito Tradicional o Arrendamiento. Personas físicas.</p>
+  </div>
+  <div class="req-grid">
+
+    <div class="req-card fiu" style="animation-delay:0.1s">
+      <div class="req-num">01</div>
+      <div class="req-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+      </div>
+      <div class="req-title">Solicitud de crédito</div>
+      <div class="req-desc">Completamente llena con información actualizada y firmada en todas las secciones requeridas.</div>
+    </div>
+
+    <div class="req-card fiu" style="animation-delay:0.15s">
+      <div class="req-num">02</div>
+      <div class="req-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M10 6H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V8a2 2 0 00-2-2h-5m-4 0V5a2 2 0 114 0v1m-4 0a2 2 0 104 0"/></svg>
+      </div>
+      <div class="req-title">Identificación oficial</div>
+      <div class="req-desc">INE o pasaporte vigente. Extranjeros: pasaporte + documento migratorio y aval mexicano.</div>
+    </div>
+
+    <div class="req-card fiu" style="animation-delay:0.2s">
+      <div class="req-num">03</div>
+      <div class="req-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>
+      </div>
+      <div class="req-title">Cotización del vehículo</div>
+      <div class="req-desc">Tabla de amortización del modelo a financiar o arrendar, incluyendo accesorios. Debe estar firmada.</div>
+    </div>
+
+    <div class="req-card fiu" style="animation-delay:0.25s">
+      <div class="req-num">04</div>
+      <div class="req-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+      </div>
+      <div class="req-title">Comprobante de domicilio</div>
+      <div class="req-desc">CFE, teléfono fijo, predial o plan celular. Máximo 3 meses de antigüedad, con código QR.</div>
+    </div>
+
+    <div class="req-card fiu" style="animation-delay:0.3s">
+      <div class="req-num">05</div>
+      <div class="req-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+      </div>
+      <div class="req-title">Comprobante de ingresos</div>
+      <div class="req-desc">Empleados: 3 nóminas + estado de cuenta. Independientes: 3 estados de cuenta o declaración fiscal.</div>
+    </div>
+
+    <div class="req-card fiu" style="animation-delay:0.35s">
+      <div class="req-num">06</div>
+      <div class="req-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 14l6-6m-5.5.5h.01m4.99 5h.01M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16l3.5-2 3.5 2 3.5-2 3.5 2zM10 8.5a.5.5 0 11-1 0 .5.5 0 011 0zm5 5a.5.5 0 11-1 0 .5.5 0 011 0z"/></svg>
+      </div>
+      <div class="req-title">Constancia fiscal (SAT)</div>
+      <div class="req-desc">Vigencia máxima 90 días, obtenida desde sat.gob.mx. El régimen fiscal debe estar activo.</div>
+    </div>
+
+    <div class="req-card fiu" style="animation-delay:0.4s">
+      <div class="req-num">07</div>
+      <div class="req-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A13.916 13.916 0 008 11a4 4 0 118 0c0 1.017-.07 2.019-.203 3m-2.118 6.844A21.88 21.88 0 0015.171 17m3.839 1.132c.645-2.266.99-4.659.99-7.132A8 8 0 008 4.07M3 15.364c.64-1.319 1-2.8 1-4.364 0-1.457.39-2.823 1.07-4"/></svg>
+      </div>
+      <div class="req-title">Biometría digital</div>
+      <div class="req-desc">Se enviará un enlace para captura digital de datos biométricos. Requerida para activar el contrato.</div>
+    </div>
+
+    <div class="req-card fiu" style="animation-delay:0.45s">
+      <div class="req-num">+</div>
+      <div class="req-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z"/></svg>
+      </div>
+      <div class="req-title">¿Tienes dudas?</div>
+      <div class="req-desc">Te oriento en cada paso. Contáctame para verificar tu documentación antes de iniciar.</div>
+    </div>
+
+  </div>
+  <div class="req-note fiu" style="animation-delay:0.5s">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+    Documentos deben ser PDF oficiales o físicos (no fotografías). Validez máxima 3 meses. BMW Financial Services se reserva el derecho de solicitar información adicional.
+    <a href="https://wa.me/529982140024?text=Hola%20Zeus%2C%20quiero%20revisar%20mis%20documentos%20para%20BMW%20Financial%20Services" target="_blank" rel="noopener" style="color:var(--bmw-blue-light);font-weight:600;white-space:nowrap;margin-left:8px">Contactar a Zeus →</a>
+  </div>
+</section>
+
+<hr class="grad-sep">
+
+<!-- ══ FAQ ══════════════════════════════════════════ -->
+<style>
+#faq {
+  padding: 80px 24px;
+  position: relative;
+  background: linear-gradient(180deg, rgba(4,8,38,0.96) 0%, rgba(6,12,52,0.98) 50%, rgba(4,8,38,0.96) 100%);
+}
+#faq::before {
+  content: '';
+  position: absolute; inset: 0;
+  background-image: url('P90286314-dealer-bmw-farrera-tuxtla-11-2017-2435px.jpg');
+  background-size: cover;
+  background-position: center 30%;
+  opacity: 0.10;
+  pointer-events: none;
+}
+.faq-inner {
+  position: relative;
+  z-index: 1;
+  max-width: 820px;
+  margin: 0 auto;
+}
+.faq-head {
+  text-align: center;
+  margin-bottom: 48px;
+}
+.faq-item {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(28,105,212,0.18);
+  border-radius: 14px;
+  margin-bottom: 12px;
+  overflow: hidden;
+  transition: border-color 0.25s, background 0.25s;
+}
+.faq-item[open] {
+  background: rgba(28,105,212,0.08);
+  border-color: rgba(28,105,212,0.50);
+}
+.faq-item summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 22px 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  font-family: 'BMW Type Next Pro', 'Inter', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: rgba(220,235,255,0.95);
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-icon {
+  flex-shrink: 0;
+  width: 28px; height: 28px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(28,105,212,0.40);
+  display: flex; align-items: center; justify-content: center;
+  color: #1c69d4;
+  transition: transform 0.3s, background 0.25s;
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 1;
+}
+.faq-item[open] .faq-icon {
+  transform: rotate(45deg);
+  background: rgba(28,105,212,0.20);
+}
+.faq-body {
+  padding: 0 28px 22px 28px;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.94rem;
+  line-height: 1.75;
+  color: rgba(200,220,255,0.80);
+}
+.faq-body strong { color: rgba(220,235,255,0.95); }
+@media (max-width: 600px) {
+  .faq-item summary { padding: 18px 20px; font-size: 0.93rem; }
+  .faq-body { padding: 0 20px 18px 20px; }
+}
+</style>
+
+<section id="faq">
+  <div class="faq-inner">
+    <div class="faq-head fiu">
+      <span class="s-tag">Preguntas frecuentes</span>
+      <h2 class="s-title" style="margin-top:0.5rem;">Lo que más me preguntan</h2>
+      <p class="s-desc" style="max-width:560px;margin:0 auto;">Resuelve tus dudas antes de dar el siguiente paso. Si no encuentras tu respuesta, escríbeme directamente.</p>
+    </div>
+
+    <details class="faq-item fiu" style="animation-delay:0.05s">
+      <summary>
+        ¿Necesito historial crediticio perfecto para financiar un BMW?
+        <span class="faq-icon">+</span>
+      </summary>
+      <div class="faq-body">
+        No necesariamente. BMW Financial Services evalúa cada caso de forma integral. Un historial sólido ayuda, pero lo más importante es demostrar <strong>capacidad de pago actual</strong>. Si tienes dudas sobre tu perfil, contáctame — te asesoro sin compromiso antes de iniciar el proceso.
+      </div>
+    </details>
+
+    <details class="faq-item fiu" style="animation-delay:0.10s">
+      <summary>
+        ¿Cuánto tiempo tarda el proceso de aprobación?
+        <span class="faq-icon">+</span>
+      </summary>
+      <div class="faq-body">
+        Con documentación completa, la aprobación puede ocurrir en <strong>24 a 72 horas hábiles</strong>. Una vez aprobado, coordinamos la entrega del vehículo. Te acompaño en cada paso para que el proceso sea rápido y sin sorpresas.
+      </div>
+    </details>
+
+    <details class="faq-item fiu" style="animation-delay:0.15s">
+      <summary>
+        ¿El enganche mínimo del 20% es negociable?
+        <span class="faq-icon">+</span>
+      </summary>
+      <div class="faq-body">
+        El 20% es el mínimo establecido por BMW Financial Services para la mayoría de los esquemas. Sin embargo, con el <strong>Plan BMW Select</strong> puedes arrancar con un enganche entre 20% y 45%, ajustando la mensualidad a lo que mejor te convenga. También podemos explorar otras opciones según tu perfil.
+      </div>
+    </details>
+
+    <details class="faq-item fiu" style="animation-delay:0.20s">
+      <summary>
+        ¿Puedo dar mi auto actual como parte de pago?
+        <span class="faq-icon">+</span>
+      </summary>
+      <div class="faq-body">
+        Sí. El seminuevo que tengas puede aplicar como <strong>enganche o abono</strong> al precio del BMW nuevo, dependiendo de su valuación. Cuéntame qué auto tienes y te doy una orientación rápida sobre cómo aprovecharlo en tu operación.
+      </div>
+    </details>
+
+    <details class="faq-item fiu" style="animation-delay:0.25s">
+      <summary>
+        ¿Puedo financiar si soy persona moral (empresa)?
+        <span class="faq-icon">+</span>
+      </summary>
+      <div class="faq-body">
+        Sí. Tenemos esquemas especiales para <strong>arrendamiento puro y financiamiento empresarial</strong>: 100% deducible, mejora el flujo de efectivo y no compromete la liquidez de tu empresa. Ideal para directivos y dueños de negocio.
+      </div>
+    </details>
+
+    <details class="faq-item fiu" style="animation-delay:0.30s">
+      <summary>
+        ¿El Plan BMW Select aplica para todos los modelos del portafolio?
+        <span class="faq-icon">+</span>
+      </summary>
+      <div class="faq-body">
+        Aplica para la <strong>mayoría de modelos nuevos</strong> del portafolio. Para vehículos seminuevos certificados BMW, hay esquemas equivalentes. Consulta disponibilidad por modelo directamente conmigo — cada caso tiene condiciones específicas según el vehículo y el plazo.
+      </div>
+    </details>
+
+    <details class="faq-item fiu" style="animation-delay:0.35s">
+      <summary>
+        ¿Los vehículos del portafolio tienen entrega inmediata?
+        <span class="faq-icon">+</span>
+      </summary>
+      <div class="faq-body">
+        La mayoría de los vehículos que presento <strong>están disponibles en agencia</strong> para revisión y, en muchos casos, entrega inmediata una vez aprobado el financiamiento. La disponibilidad puede cambiar — escríbeme para confirmar el estatus actual de cualquier modelo.
+      </div>
+    </details>
+
+    <details class="faq-item fiu" style="animation-delay:0.40s">
+      <summary>
+        ¿Qué garantía tienen los vehículos BMW que manejo?
+        <span class="faq-icon">+</span>
+      </summary>
+      <div class="faq-body">
+        Los vehículos nuevos incluyen la <strong>garantía oficial BMW de 3 años o 200,000 km</strong> (lo que ocurra primero), además de <strong>mantenimientos sin costo por 3 años o 60,000 km</strong> (lo que ocurra primero). Los seminuevos BMW Certified pasan por una revisión técnica de 360 puntos y cuentan con garantía extendida. Todos los autos que presento provienen de BMW Farrera Chiapas, concesionario oficial.
+      </div>
+    </details>
+
+    <div class="fiu" style="animation-delay:0.45s; text-align:center; margin-top:36px;">
+      <p style="font-family:'Inter',sans-serif; font-size:0.9rem; color:rgba(180,205,255,0.70); margin-bottom:16px;">¿Tienes una pregunta diferente?</p>
+      <a href="https://wa.me/529982140024?text=Hola%20Zeus%2C%20tengo%20una%20pregunta%20sobre%20el%20proceso%20BMW" target="_blank" rel="noopener"
+         style="display:inline-flex;align-items:center;gap:8px;background:#25d366;color:#fff;font-family:'Inter',sans-serif;font-weight:700;font-size:0.88rem;padding:12px 24px;border-radius:50px;text-decoration:none;letter-spacing:0.04em;">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.554 4.118 1.52 5.849L.057 23.09a.75.75 0 00.908.94l5.42-1.427A11.95 11.95 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.712 9.712 0 01-4.953-1.354l-.355-.212-3.68.968.984-3.595-.232-.37A9.712 9.712 0 012.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/></svg>
+        Escríbeme por WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
+
+<hr class="grad-sep">
+
+<!-- ══ FINANCIAMIENTO ════════════════════════════════ -->
+<section id="financiamiento" style="position:relative;overflow:hidden;">
+  <div class="orb orb-blue"   style="width:600px;height:600px;top:-200px;left:-150px;opacity:0.45;"></div>
+  <div class="orb orb-purple" style="width:420px;height:420px;bottom:-100px;right:-120px;opacity:0.38;"></div>
+  <div class="fin-section-head" style="position:relative;z-index:1;">
+    <div class="fiu" style="animation-delay:0.1s">
+      <span class="s-tag">Financiamiento</span>
+      <h2 class="s-title">Soluciones financieras<br>a tu medida</h2>
+      <p class="s-desc">Accede al BMW ideal con las mejores condiciones del mercado. Asesoría personalizada en cada esquema.</p>
+    </div>
+  </div>
+  <div class="fin-cards-grid">
+    <!-- BMW Financial Services -->
+    <div class="fin-card-v2 dark fiu" style="animation-delay:0.1s">
+      <div class="fin-card-bg" style="background-image:url('PERSONAS/financial_service_loan_support_customer-portal.webp')"></div>
+      <div class="fin-card-inner">
+        <div class="fin-icon-v2">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+        </div>
+        <div class="fin-name">BMW Financial Services</div>
+        <div class="fin-sub">Financiamiento oficial de la marca con tasas preferenciales, plazos flexibles y condiciones exclusivas para compradores BMW.</div>
+        <div class="fin-spacer"></div>
+        <div class="fin-divider"></div>
+        <div class="fin-tags-v2">
+          <span class="fin-tag-v2">Tasas preferenciales</span>
+          <span class="fin-tag-v2">Plazos flexibles</span>
+          <span class="fin-tag-v2">Aprobación rápida</span>
+        </div>
+        <div class="fin-btns">
+          <a href="https://wa.me/529982140024?text=Hola%20Zeus%2C%20me%20interesa%20el%20financiamiento%20BMW%20Financial%20Services" target="_blank" rel="noopener" class="btn-fin primary">Solicitar info</a>
+          <a href="tel:+529616175800" class="btn-fin ghost">Llamar</a>
+        </div>
+      </div>
+    </div>
+    <!-- Arrendamiento Puro -->
+    <div class="fin-card-v2 mid fiu" style="animation-delay:0.2s">
+      <div class="fin-card-bg" style="background-image:url('BMW X3 BLANCA/PHOTO-2026-01-23-11-32-51.jpg')"></div>
+      <div class="fin-card-inner">
+        <div class="fin-icon-v2">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        </div>
+        <div class="fin-name">Arrendamiento Puro</div>
+        <div class="fin-sub">Optimiza recursos y aprovecha beneficios fiscales. Deduce el 100% de rentas mensuales manteniendo liquidez en tu empresa.</div>
+        <div class="fin-spacer"></div>
+        <div class="fin-divider"></div>
+        <div class="fin-tags-v2">
+          <span class="fin-tag-v2">100% deducible</span>
+          <span class="fin-tag-v2">Flujo de efectivo</span>
+          <span class="fin-tag-v2">Beneficio fiscal</span>
+        </div>
+        <div class="fin-btns">
+          <a href="https://wa.me/529982140024?text=Hola%20Zeus%2C%20me%20interesa%20el%20arrendamiento%20puro" target="_blank" rel="noopener" class="btn-fin primary">Solicitar info</a>
+        </div>
+      </div>
+    </div>
+    <!-- Seminuevos -->
+    <div class="fin-card-v2 light fiu" style="animation-delay:0.3s">
+      <div class="fin-card-bg" style="background-image:url('330e JAHRE/WhatsApp Image 2026-03-10 at 12.28.19 PM.jpeg')"></div>
+      <div class="fin-card-inner">
+        <div class="fin-icon-v2">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>
+        </div>
+        <div class="fin-name">Seminuevos BMW &amp; Multimarca</div>
+        <div class="fin-sub">Vehículos seminuevos BMW o premium con financiamiento competitivo vía BMW Financial Services o cualquier banco.</div>
+        <div class="fin-spacer"></div>
+        <div class="fin-divider"></div>
+        <div class="fin-tags-v2">
+          <span class="fin-tag-v2">BMW Certified</span>
+          <span class="fin-tag-v2">Multimarca</span>
+          <span class="fin-tag-v2">Cualquier banco</span>
+        </div>
+        <div class="fin-btns">
+          <a href="https://wa.me/529982140024?text=Hola%20Zeus%2C%20me%20interesa%20un%20seminuevo" target="_blank" rel="noopener" class="btn-fin primary">Ver opciones</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── BMW SELECT ────────────────────────────── -->
+  <div class="bmw-select-wrap fiu" style="animation-delay:0.2s">
+    <div class="bsel-header">
+      <span class="bsel-badge">Producto Destacado</span>
+      <div class="bsel-logo-line">
+        <span class="bsel-title">BMW SELECT</span>
+        <span class="bsel-by">by BMW Financial Services</span>
+      </div>
+      <p class="bsel-desc">El esquema que te permite estrenar un BMW desde el primer día, pagando solo una parte del valor del vehículo — con mensualidades bajas y atractivas, y total libertad al final del contrato.</p>
+    </div>
+    <div class="bsel-grid">
+      <!-- Steps -->
+      <div class="bsel-steps">
+        <div class="bsel-step">
+          <div class="bsel-step-num">01</div>
+          <div>
+            <div class="bsel-step-title">Enganche inicial</div>
+            <div class="bsel-step-desc">Aportas entre el 20% y 45% del valor del vehículo y el BMW es tuyo desde el primer día.</div>
+          </div>
+        </div>
+        <div class="bsel-step">
+          <div class="bsel-step-num">02</div>
+          <div>
+            <div class="bsel-step-title">Mensualidades accesibles</div>
+            <div class="bsel-step-desc">Elige el plazo que mejor se adapte a ti: 24, 36 o 48 meses con pagos bajos y fijos.</div>
+          </div>
+        </div>
+        <div class="bsel-step">
+          <div class="bsel-step-num">03</div>
+          <div>
+            <div class="bsel-step-title">Tú decides al final del plazo</div>
+            <div class="bsel-step-desc">Al término del contrato, cuatro opciones completamente flexibles:</div>
+          </div>
+        </div>
+        <div class="bsel-options">
+          <div class="bsel-opt"><span>↗</span> Cambia a un BMW nuevo</div>
+          <div class="bsel-opt"><span>✓</span> Paga el saldo restante</div>
+          <div class="bsel-opt"><span>↩</span> Devuelve el vehículo</div>
+          <div class="bsel-opt"><span>+</span> Refinancia hasta 36 meses más</div>
+        </div>
+        <a href="https://wa.me/529982140024?text=Hola%20Zeus%2C%20quiero%20conocer%20mi%20plan%20BMW%20SELECT" target="_blank" rel="noopener" class="btn-bsel">
+          Conocer mi plan BMW SELECT →
+        </a>
+      </div>
+      <!-- BMW Select Blueprint v2 -->
+      <style>
+        .bsel-blueprint-v2 {
+          position: relative;
+          background: #f4f6fb;
+          border: 1px solid rgba(28,105,212,0.18);
+          border-radius: 18px;
+          overflow: hidden;
+          padding: 18px 16px 14px;
+        }
+        .bsel-blueprint-v2::before {
+          content: '';
+          position: absolute; inset: 0;
+          background-image:
+            linear-gradient(rgba(28,105,212,0.06) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(28,105,212,0.06) 1px, transparent 1px);
+          background-size: 26px 26px;
+          pointer-events: none;
+        }
+        .bp2-scan {
+          position: absolute; left:0; right:0; height:2px; z-index:8;
+          background: linear-gradient(90deg, transparent, rgba(160,215,255,0.70), transparent);
+          box-shadow: 0 0 10px rgba(110,185,255,0.40);
+          animation: bp2Scan 5.5s linear 5s infinite;
+          opacity: 0;
+        }
+        @keyframes bp2Scan {
+          0%   { top:0%;   opacity:0; }
+          5%   { opacity:1; }
+          95%  { opacity:0.8; }
+          100% { top:100%; opacity:0; }
+        }
+        .bp2-title {
+          position: relative; z-index:3;
+          font-family: 'BMW Type Next Pro','Inter',sans-serif;
+          font-size: clamp(1.2rem, 2.8vw, 1.75rem);
+          font-weight: 900;
+          background: linear-gradient(135deg, #0a0f2e 0%, #1c3a6e 50%, #1c69d4 100%);
+          -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+          background-clip: text;
+          letter-spacing: -0.02em;
+          line-height: 1;
+          margin-bottom: 8px;
+        }
+        .bp2-title em { font-style:normal; }
+        .bp2-car-svg {
+          width:100%; display:block; position:relative; z-index:3;
+          filter: drop-shadow(0 0 10px rgba(110,180,255,0.32));
+          transform: scaleX(-1);
+        }
+        /* Draw animations */
+        .bpd1 { stroke-dasharray:1800; stroke-dashoffset:1800; animation:bpDraw 4s ease forwards 0.2s; }
+        .bpd2 { stroke-dasharray:1000; stroke-dashoffset:1000; animation:bpDraw 3s ease forwards 0.6s; }
+        .bpd3 { stroke-dasharray:600;  stroke-dashoffset:600;  animation:bpDraw 2s ease forwards 1.2s; }
+        .bpd4 { stroke-dasharray:300;  stroke-dashoffset:300;  animation:bpDraw 1.4s ease forwards 2s; }
+        .bpd5 { stroke-dasharray:150;  stroke-dashoffset:150;  animation:bpDraw 0.9s ease forwards 2.9s; }
+        .bpd6 { stroke-dasharray:80;   stroke-dashoffset:80;   animation:bpDraw 0.6s ease forwards 3.6s; }
+        @keyframes bpDraw { to { stroke-dashoffset:0; } }
+        /* Labels */
+        .bp2-labels {
+          position:relative; z-index:3;
+          display:grid;
+          grid-template-columns: 22.5fr 55.5fr 22fr;
+          margin-top: 0;
+        }
+        .bp2-lbl {
+          padding:8px 6px 4px;
+          border-top: 1.5px dashed rgba(28,105,212,0.25);
+          opacity:1;
+        }
+        .bp2-lbl:nth-child(1) { text-align:left; }
+        .bp2-lbl:nth-child(2) { text-align:center; border-top-color:rgba(28,105,212,0.45); }
+        .bp2-lbl:nth-child(3) { text-align:right; }
+        .bp2-lbl-num {
+          font-family:'Inter',monospace; font-size:0.56rem; font-weight:700;
+          color:#1c69d4; letter-spacing:0.12em; display:block; margin-bottom:2px;
+        }
+        .bp2-lbl-name {
+          font-family:'BMW Type Next Pro','Inter',sans-serif;
+          font-size:clamp(0.58rem,1.2vw,0.70rem); font-weight:700;
+          letter-spacing:0.05em; text-transform:uppercase;
+          color:#0a0f1e; display:block;
+        }
+        .bp2-lbl-sub {
+          font-family:'Inter',sans-serif; font-size:0.56rem;
+          color:rgba(20,40,100,0.58); display:block; margin-top:1px;
+        }
+      </style>
+
+      <div class="bsel-img-col">
+        <div class="bsel-blueprint-v2">
+          <div class="bp2-title">BMW SELECT<em>.</em></div>
+
+          <!-- BMW Select Image -->
+          <div style="position:relative; z-index:3; border-radius:12px; overflow:hidden; margin-bottom:0;">
+            <img src="BMWSELECTIMAGE.jpg"
+                 alt="BMW Select — Plan Financiero"
+                 style="width:100%; display:block; border-radius:10px;"
+                 loading="lazy"/>
+          </div>
+
+          <!-- Phase labels below dividers -->
+          <div class="bp2-labels">
+            <div class="bp2-lbl">
+              <span class="bp2-lbl-num">01</span>
+              <span class="bp2-lbl-name">Enganche</span>
+              <span class="bp2-lbl-sub">20 – 45%</span>
+            </div>
+            <div class="bp2-lbl">
+              <span class="bp2-lbl-num">02</span>
+              <span class="bp2-lbl-name">Mensualidades</span>
+              <span class="bp2-lbl-sub">24 · 36 · 48 meses</span>
+            </div>
+            <div class="bp2-lbl">
+              <span class="bp2-lbl-num">03</span>
+              <span class="bp2-lbl-name">Pago final</span>
+              <span class="bp2-lbl-sub">opcional</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="bsel-stat-row">
+          <div class="bsel-stat">
+            <div class="bsel-stat-val">20–45%</div>
+            <div class="bsel-stat-label">Enganche inicial</div>
+          </div>
+          <div class="bsel-stat">
+            <div class="bsel-stat-val">24–48</div>
+            <div class="bsel-stat-label">Meses de plazo</div>
+          </div>
+          <div class="bsel-stat">
+            <div class="bsel-stat-val">4</div>
+            <div class="bsel-stat-label">Opciones al vencer</div>
+          </div>
+        </div>
+      </div>      </div>
+    </div>
+  </div>
+
+</section>
+
+<hr class="grad-sep">
+<!-- ══ PORTAFOLIO ════════════════════════════════════ -->
+<section id="portafolio">
+  <div class="port-section-head fiu">
+    <div>
+      <span class="s-tag">Portafolio</span>
+      <h2 class="s-title">Algunos de nuestros modelos</h2>
+    </div>
+    <span class="port-badge">+ Modelos próximamente</span>
+  </div>
+  <div class="port-items">
+
+    <div class="port-item fiu" style="animation-delay:0.1s">
+      <div class="port-item-meta">
+        <div class="port-item-tag">Nuevo · Disponible · 2026</div>
+        <div class="port-item-name">BMW X6</div>
+        <div class="port-item-desc">SAV de alto rendimiento con diseño coupé, potencia M Sport y tecnología BMW iDrive 8.5.</div>
+      </div>
+      <a href="https://wa.me/529982140024?text=Hola%20Zeus%2C%20me%20interesa%20el%20BMW%20X6%202026" target="_blank" rel="noopener" class="port-item-img-wrap">
+        <img src="X6 2026 PISO/PHOTO-2026-01-19-18-54-13.jpg" alt="BMW X6 2026" loading="lazy" />
+        <div class="port-item-overlay"><span class="port-cta-pill">Consultar precio →</span></div>
+      </a>
+    </div>
+
+    <div class="port-item fiu" style="animation-delay:0.15s">
+      <div class="port-item-meta">
+        <div class="port-item-tag">Nuevo · Disponible</div>
+        <div class="port-item-name">BMW X3</div>
+        <div class="port-item-desc">SAV premium en blanco Alpine. Tecnología xDrive, sistema BMW Live Cockpit Professional.</div>
+      </div>
+      <a href="https://wa.me/529982140024?text=Hola%20Zeus%2C%20me%20interesa%20la%20BMW%20X3" target="_blank" rel="noopener" class="port-item-img-wrap">
+        <img src="BMW X3 BLANCA/PHOTO-2026-01-23-11-32-51.jpg" alt="BMW X3 Blanca" loading="lazy" />
+        <div class="port-item-overlay"><span class="port-cta-pill">Consultar precio →</span></div>
+      </a>
+    </div>
+
+    <div class="port-item fiu" style="animation-delay:0.2s">
+      <div class="port-item-meta">
+        <div class="port-item-tag">Edición Especial · Frozen</div>
+        <div class="port-item-name">BMW X3 30 Frozen</div>
+        <div class="port-item-desc">Acabado Frozen Edition exclusivo. Pintura mate premium con protección de fábrica y paquete M Sport completo.</div>
+      </div>
+      <a href="https://wa.me/529982140024?text=Hola%20Zeus%2C%20me%20interesa%20la%20BMW%20X3%20Frozen" target="_blank" rel="noopener" class="port-item-img-wrap">
+        <img src="X3 30 FROZEN/PHOTO-2026-03-18-16-34-06.jpg" alt="BMW X3 30 Frozen" loading="lazy" />
+        <div class="port-item-overlay"><span class="port-cta-pill">Consultar precio →</span></div>
+      </a>
+    </div>
+
+    <div class="port-item fiu" style="animation-delay:0.25s">
+      <div class="port-item-meta">
+        <div class="port-item-tag">Nuevo · Disponible</div>
+        <div class="port-item-name">BMW X1 18i</div>
+        <div class="port-item-desc">El SAV compacto más versátil de BMW. Diseño moderno, cabina espaciosa y eficiencia superior.</div>
+      </div>
+      <a href="https://wa.me/529982140024?text=Hola%20Zeus%2C%20me%20interesa%20la%20BMW%20X1" target="_blank" rel="noopener" class="port-item-img-wrap">
+        <img src="X1 18 BLANCA/PHOTO-2025-06-02-12-24-12.jpg" alt="BMW X1 18" loading="lazy" />
+        <div class="port-item-overlay"><span class="port-cta-pill">Consultar precio →</span></div>
+      </a>
+    </div>
+
+    <div class="port-item fiu" style="animation-delay:0.3s">
+      <div class="port-item-meta">
+        <div class="port-item-tag">Nuevo · 2025</div>
+        <div class="port-item-name">BMW 118 SKY</div>
+        <div class="port-item-desc">Primera generación del Serie 1 con plataforma UKL2. Techo panorámico Sky, digital cockpit y BMW OS9.</div>
+      </div>
+      <a href="https://wa.me/529982140024?text=Hola%20Zeus%2C%20me%20interesa%20la%20BMW%20118%20SKY" target="_blank" rel="noopener" class="port-item-img-wrap">
+        <img src="118 SKY 2025/PHOTO-2025-08-15-10-55-32.jpg" alt="BMW 118 SKY" loading="lazy" />
+        <div class="port-item-overlay"><span class="port-cta-pill">Consultar precio →</span></div>
+      </a>
+    </div>
+
+    <div class="port-item fiu" style="animation-delay:0.35s">
+      <div class="port-item-meta">
+        <div class="port-item-tag">Híbrido · JAHRE Edition</div>
+        <div class="port-item-name">BMW 330e</div>
+        <div class="port-item-desc">Edición especial 100 Jahre BMW. Motor híbrido enchufable, 292 hp, autonomía eléctrica urbana y acabados exclusivos.</div>
+      </div>
+      <a href="https://wa.me/529982140024?text=Hola%20Zeus%2C%20me%20interesa%20el%20BMW%20330e" target="_blank" rel="noopener" class="port-item-img-wrap">
+        <img src="330e JAHRE/WhatsApp Image 2026-03-10 at 12.28.19 PM.jpeg" alt="BMW 330e JAHRE" loading="lazy" />
+        <div class="port-item-overlay"><span class="port-cta-pill">Consultar precio →</span></div>
+      </a>
+    </div>
+
+  </div>
+  <p style="text-align:center; margin-top:2rem; font-family:'Inter',sans-serif; font-size:12px; color:rgba(255,255,255,0.2); font-style:italic;">
+    El portafolio se actualiza constantemente. Consulta disponibilidad y nuevos modelos directamente.
+  </p>
+</section>
+
+<hr class="grad-sep">
+
+<!-- ══ TESTIMONIOS ═══════════════════════════════════ -->
+<section id="testimonios">
+  <div class="testi-glow-a"></div>
+  <div class="testi-glow-b"></div>
+
+  <div class="testi-head-row fiu" style="animation-delay:0.1s">
+    <div>
+      <span class="s-tag">Testimonios</span>
+      <h2 class="s-title">Lo que dicen<br>mis clientes</h2>
+    </div>
+    <div class="testi-stars">
+      <span class="star-icon">★</span><span class="star-icon">★</span>
+      <span class="star-icon">★</span><span class="star-icon">★</span><span class="star-icon">★</span>
+      <span style="font-family:'Inter',sans-serif; font-size:13px; color:var(--bmw-muted); margin-left:8px;">5/5</span>
+    </div>
+  </div>
+
+  <div class="testi-layout fiu" style="animation-delay:0.2s">
+
+    <!-- Left col: carousel -->
+    <div>
+      <div class="testi-carousel-wrap liquid-glass">
+        <div class="testi-track" id="testiTrack">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+      <div class="testi-nav-row">
+        <button class="testi-nav-btn" onclick="moveCarousel(-1)" aria-label="Anterior">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+        </button>
+        <button class="testi-nav-btn" onclick="moveCarousel(1)" aria-label="Siguiente">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Right col: submission form -->
+    <div class="testi-form-panel liquid-glass" id="testiFormPanel">
+      <div class="testi-form-title">Comparte tu experiencia</div>
+      <div class="testi-form-sub">¿Eres cliente de Zeus? Deja tu reseña — aparecerá en el carrusel al instante.</div>
+
+      <div class="testi-star-row" id="testiStarRow">
+        <button class="testi-star-btn" onclick="setRating(1)">★</button>
+        <button class="testi-star-btn" onclick="setRating(2)">★</button>
+        <button class="testi-star-btn" onclick="setRating(3)">★</button>
+        <button class="testi-star-btn" onclick="setRating(4)">★</button>
+        <button class="testi-star-btn" onclick="setRating(5)">★</button>
+      </div>
+
+      <input type="text" id="testiName" class="testi-field" placeholder="Tu nombre" maxlength="48" />
+      <textarea id="testiComment" class="testi-field" placeholder="Cuéntanos sobre tu experiencia con Zeus Cervantes BMW…" maxlength="320"></textarea>
+
+      <button class="btn-testi-submit" onclick="submitTestimonial()">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M22 2L11 13"/><path d="M22 2L15 22 11 13 2 9l20-7z"/></svg>
+        Enviar reseña
+      </button>
+
+      <div class="testi-success" id="testiSuccess">
+        <span class="check-icon">✓</span>
+        <strong style="color:#fff; display:block; margin-bottom:4px;">¡Gracias por tu reseña!</strong>
+        Ya aparece en el carrusel. Tu opinión ayuda a otros clientes.
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══ UBICACIÓN ════════════════════════════════════ -->
+<section id="ubicacion" style="background:var(--bmw-dark); padding:7rem 120px;">
+  <div style="max-width:900px; margin:0 auto; text-align:center;">
+    <span class="s-tag fiu" style="animation-delay:0.1s">Visítanos</span>
+    <h2 class="s-title fiu" style="animation-delay:0.2s; margin:12px 0 8px;">BMW Farrera Chiapas</h2>
+    <p class="fiu" style="animation-delay:0.3s; font-family:'Inter',sans-serif; font-weight:400; color:var(--bmw-muted); font-size:1rem; margin-bottom:2rem; line-height:1.7;">
+      Boulevard Ciro Farrera #690, Colonia Flamboyanes, CP 29050<br>
+      Tuxtla Gutiérrez, Chiapas, México
+    </p>
+    <div class="fiu" style="animation-delay:0.35s; display:inline-flex; flex-wrap:wrap; gap:12px; justify-content:center; margin:0 0 2rem;">
+      <div style="background:var(--bmw-card); border:1px solid var(--bmw-border); border-radius:14px; padding:14px 22px; text-align:center; min-width:140px;">
+        <div style="font-family:'Inter',sans-serif; font-weight:700; font-size:10px; color:var(--bmw-blue); letter-spacing:1.5px; text-transform:uppercase; margin-bottom:6px;">Lun — Vie</div>
+        <div style="font-family:'Inter',sans-serif; font-weight:400; font-size:0.95rem; color:var(--bmw-text);">9:00 am – 8:00 pm</div>
+      </div>
+      <div style="background:var(--bmw-card); border:1px solid var(--bmw-border); border-radius:14px; padding:14px 22px; text-align:center; min-width:140px;">
+        <div style="font-family:'Inter',sans-serif; font-weight:700; font-size:10px; color:var(--bmw-blue); letter-spacing:1.5px; text-transform:uppercase; margin-bottom:6px;">Sábado</div>
+        <div style="font-family:'Inter',sans-serif; font-weight:400; font-size:0.95rem; color:var(--bmw-text);">9:00 am – 5:00 pm</div>
+      </div>
+      <div style="background:var(--bmw-card); border:1px solid var(--bmw-border); border-radius:14px; padding:14px 22px; text-align:center; min-width:140px;">
+        <div style="font-family:'Inter',sans-serif; font-weight:700; font-size:10px; color:var(--bmw-blue); letter-spacing:1.5px; text-transform:uppercase; margin-bottom:6px;">Domingo</div>
+        <div style="font-family:'Inter',sans-serif; font-weight:400; font-size:0.95rem; color:var(--bmw-text);">10:00 am – 3:00 pm</div>
+      </div>
+    </div>
+    <div class="fiu" style="animation-delay:0.4s; border-radius:20px; overflow:hidden; border:1px solid var(--bmw-border); margin-bottom:1.8rem; box-shadow:0 8px 32px rgba(0,0,0,0.3);">
+      <iframe src="https://maps.google.com/maps?q=Boulevard+Ciro+Farrera+690,+Flamboyanes,+29050+Tuxtla+Gutierrez,+Chiapas,+Mexico&output=embed"
+        width="100%" height="360" style="border:0; display:block; filter:invert(90%) hue-rotate(180deg);"
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+    <div class="fiu" style="animation-delay:0.45s; display:flex; gap:14px; flex-wrap:wrap; justify-content:center; margin-bottom:1rem;">
+      <a href="https://maps.apple.com/?address=Boulevard+Ciro+Farrera+690,+Tuxtla+Gutierrez,+Chiapas,+Mexico"
+         target="_blank" rel="noopener"
+         style="display:inline-flex; align-items:center; gap:8px; padding:12px 24px; border-radius:50px; background:var(--bmw-card); border:1px solid var(--bmw-border); font-family:'Inter',sans-serif; font-size:14px; font-weight:500; color:var(--bmw-text); transition:all 0.2s;"
+         onmouseover="this.style.borderColor='var(--bmw-blue)'" onmouseout="this.style.borderColor='var(--bmw-border)'">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        Apple Maps
+      </a>
+      <a href="https://www.google.com/maps/dir/?api=1&destination=Boulevard+Ciro+Farrera+690,+Tuxtla+Gutierrez,+Chiapas"
+         target="_blank" rel="noopener"
+         style="display:inline-flex; align-items:center; gap:8px; padding:12px 24px; border-radius:50px; background:var(--bmw-blue); border:1px solid var(--bmw-blue); font-family:'Inter',sans-serif; font-size:14px; font-weight:600; color:#fff; transition:all 0.2s;"
+         onmouseover="this.style.opacity='0.85'" onmouseout="this.style.opacity='1'">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18m-6-6l6 6-6 6"/></svg>
+        Cómo llegar
+      </a>
+    </div>
+    <p class="fiu" style="animation-delay:0.5s; font-family:'Inter',sans-serif; font-weight:400; color:var(--bmw-muted); font-size:0.85rem;">
+      Tel. concesionario: <a href="tel:+529616175800" style="color:var(--bmw-blue); text-decoration:none;">961 617 5800</a> · Ext. 71373
+    </p>
+  </div>
+</section>
+
+<hr class="grad-sep">
+<!-- ══ CTA / PARTNER ══════════════════════════════════ -->
+<section id="cta-section">
+  <div class="cta-inner liquid-glass" id="ctaBox">
+    <h2 class="cta-h2 fiu" style="animation-delay:0.1s">
+      ¿Tu próximo<br><span class="blue">BMW</span>?
+    </h2>
+    <p class="cta-sub fiu" style="animation-delay:0.2s">
+      17 años de experiencia a tu servicio. Sin presiones, con toda la información que necesitas.
+    </p>
+    <div class="cta-btns fiu" style="animation-delay:0.3s">
+      <a href="https://wa.me/529982140024?text=Hola%20Zeus%2C%20me%20gustar%C3%ADa%20recibir%20asesor%C3%ADa%20sobre%20veh%C3%ADculos%20BMW" target="_blank" rel="noopener" class="btn-cta-primary">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M11.987 0C5.373 0 0 5.373 0 11.987c0 2.11.558 4.094 1.533 5.812L.057 23.868l6.253-1.638A11.96 11.96 0 0011.987 24C18.6 24 24 18.627 24 12.013 24 5.373 18.6 0 11.987 0z"/></svg>
+        Escribir por WhatsApp
+      </a>
+      <a href="tel:+529616175800" class="btn-cta-ghost">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+        Llamar al concesionario
+      </a>
+    </div>
+    <p style="font-family:'Inter',sans-serif; font-size:11px; color:rgba(255,255,255,0.60); margin-top:1.5rem; position:relative; z-index:3;">
+      BMW Farrera Chiapas · Tuxtla Gutiérrez · +52 961 617 5800 ext. 71373
+    </p>
+  </div>
+</section>
+
+<!-- ══ CONTACTO ══════════════════════════════════════ -->
+<section id="contacto">
+  <div class="contact-wrap">
+    <div class="reveal">
+      <span class="s-tag">Contacto</span>
+      <h2 class="contact-tagline">
+        Hablemos sobre tu<br>próximo <span class="blue">BMW</span>
+      </h2>
+      <p class="contact-sub">
+        Ya sea que estés listo para adquirir un vehículo o simplemente explorar opciones, estoy aquí para asesorarte sin presiones.
+      </p>
+      <div class="contact-methods">
+        <a href="https://wa.me/529982140024" target="_blank" rel="noopener" class="contact-method wa">
+          <div class="cm-icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM11.987 0C5.373 0 0 5.373 0 11.987c0 2.11.558 4.094 1.533 5.812L.057 23.868l6.253-1.638A11.96 11.96 0 0011.987 24C18.6 24 24 18.627 24 12.013 24 5.373 18.6 0 11.987 0z"/></svg></div>
+          <div><div class="cm-label">WhatsApp Personal</div><div class="cm-value">+52 998 214 0024</div><div class="cm-sub">Respuesta inmediata</div></div>
+        </a>
+        <a href="tel:+529616175800" class="contact-method">
+          <div class="cm-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg></div>
+          <div><div class="cm-label">BMW Farrera Tuxtla</div><div class="cm-value">+52 961 617 5800</div><div class="cm-sub">Ext. 71373</div></div>
+        </a>
+        <a href="mailto:zeus.cervantes@bmwchiapas.mx" class="contact-method">
+          <div class="cm-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg></div>
+          <div><div class="cm-label">Correo Electrónico</div><div class="cm-value">zeus.cervantes@bmwchiapas.mx</div><div class="cm-sub">Respuesta en horario de oficina</div></div>
+        </a>
+        <a href="https://www.facebook.com/share/1EFtw7YubW/?mibextid=wwXIfr" target="_blank" rel="noopener" class="contact-method">
+          <div class="cm-icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></div>
+          <div><div class="cm-label">Facebook</div><div class="cm-value">Zeus Cervantes BMW</div><div class="cm-sub">Sígueme para novedades y modelos</div></div>
+        </a>
+        <a href="https://www.tiktok.com/@zeusc_bmwchiapas" target="_blank" rel="noopener" class="contact-method">
+          <div class="cm-icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.99a8.18 8.18 0 004.78 1.52V7.06a4.84 4.84 0 01-1.01-.37z"/></svg></div>
+          <div><div class="cm-label">TikTok</div><div class="cm-value">@zeusc_bmwchiapas</div><div class="cm-sub">Contenido BMW · Autos · Chiapas</div></div>
+        </a>
+      </div>
+    </div>
+    <div class="reveal" style="transition-delay:0.15s">
+      <div class="contact-card">
+        <img class="cc-logo" src="LOGOS OFICIALES BMW/BMW LOGO 2020_Mesa de trabajo 1 copia.png" alt="BMW" />
+        <div class="cc-name">Zeus Cervantes</div>
+        <div class="cc-role">BMW Certified Sales Executive</div>
+        <div class="cc-divider"></div>
+        <a href="https://wa.me/529982140024?text=Hola%20Zeus%2C%20me%20gustar%C3%ADa%20recibir%20asesor%C3%ADa%20sobre%20veh%C3%ADculos%20BMW" target="_blank" rel="noopener" class="btn-wa-big">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM11.987 0C5.373 0 0 5.373 0 11.987c0 2.11.558 4.094 1.533 5.812L.057 23.868l6.253-1.638A11.96 11.96 0 0011.987 24C18.6 24 24 18.627 24 12.013 24 5.373 18.6 0 11.987 0z"/></svg>
+          Escribir por WhatsApp
+        </a>
+        <a href="tel:+529616175800" class="btn-secondary-card">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+          Llamar al concesionario
+        </a>
+        <a href="mailto:zeus.cervantes@bmwchiapas.mx" class="btn-secondary-card">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+          Enviar correo
+        </a>
+        <div class="social-links" style="justify-content:center; margin-top:1.2rem; padding-top:1rem; border-top:1px solid rgba(255,255,255,0.07);">
+          <a href="https://www.facebook.com/share/1EFtw7YubW/?mibextid=wwXIfr" target="_blank" rel="noopener" class="social-btn fb">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            Facebook
+          </a>
+          <a href="https://www.tiktok.com/@zeusc_bmwchiapas" target="_blank" rel="noopener" class="social-btn tt">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.99a8.18 8.18 0 004.78 1.52V7.06a4.84 4.84 0 01-1.01-.37z"/></svg>
+            TikTok
+          </a>
+        </div>
+        <div class="cc-note">BMW Farrera Chiapas · Tuxtla Gutiérrez<br>Lunes a Domingo</div>
+      </div>
+    </div>
+  <div class="contact-form-wrap reveal">
+    <h3>Escríbeme · Te respondo personalmente</h3>
+    <p class="cf-sub">Cuéntame qué modelo te interesa o cualquier duda. Recibiré tu mensaje directo en mi correo.</p>
+    <form id="contactForm">
+      <input type="hidden" name="access_key" value="e03f423e-7fac-4adb-a956-39ef63c2a6c1">
+      <input type="hidden" name="subject" value="Nuevo mensaje desde tu Landing Page BMW">
+      <input type="hidden" name="from_name" value="Landing Page Zeus BMW">
+      <div class="cf-grid">
+        <div class="cf-field">
+          <label for="cf-nombre">Nombre completo *</label>
+          <input type="text" id="cf-nombre" name="nombre" placeholder="Tu nombre" required>
+        </div>
+        <div class="cf-field">
+          <label for="cf-tel">Teléfono / WhatsApp</label>
+          <input type="tel" id="cf-tel" name="telefono" placeholder="+52 000 000 0000">
+        </div>
+        <div class="cf-field">
+          <label for="cf-email">Correo electrónico *</label>
+          <input type="email" id="cf-email" name="email" placeholder="tu@correo.com" required>
+        </div>
+        <div class="cf-field">
+          <label for="cf-modelo">Modelo de interés</label>
+          <select id="cf-modelo" name="modelo">
+            <option value="">— Selecciona un modelo —</option>
+            <optgroup label="── SAVs Serie X ──">
+              <option>BMW X1</option>
+              <option>BMW X2 / X2 M35i</option>
+              <option>BMW X3</option>
+              <option>BMW X3 M50 xDrive</option>
+              <option>BMW X4</option>
+              <option>BMW X5</option>
+              <option>BMW X6</option>
+              <option>BMW X7</option>
+              <option>BMW XM</option>
+            </optgroup>
+            <optgroup label="── Serie (Sedán / Coupé) ──">
+              <option>BMW Serie 1</option>
+              <option>BMW Serie 2 Coupé</option>
+              <option>BMW Serie 2 Gran Coupé</option>
+              <option>BMW Serie 2 Active Tourer</option>
+              <option>BMW Serie 3</option>
+              <option>BMW Serie 4 Coupé</option>
+              <option>BMW Serie 4 Gran Coupé</option>
+              <option>BMW Serie 4 Cabrio</option>
+              <option>BMW Serie 5</option>
+              <option>BMW Serie 7</option>
+              <option>BMW Serie 8 Coupé</option>
+              <option>BMW Serie 8 Gran Coupé</option>
+            </optgroup>
+            <optgroup label="── Eléctricos e Híbridos ──">
+              <option>BMW iX1</option>
+              <option>BMW iX2</option>
+              <option>BMW i4</option>
+              <option>BMW i5</option>
+              <option>BMW iX</option>
+              <option>BMW 330e (Híbrido enchufable)</option>
+            </optgroup>
+            <optgroup label="── M Performance ──">
+              <option>BMW M2</option>
+              <option>BMW M3</option>
+              <option>BMW M4</option>
+              <option>BMW M5</option>
+              <option>BMW M8</option>
+            </optgroup>
+            <optgroup label="── Roadster ──">
+              <option>BMW Z4</option>
+            </optgroup>
+            <option>Otro / Aún no lo sé</option>
+          </select>
+        </div>
+        <div class="cf-field cf-full">
+          <label for="cf-msg">Mensaje *</label>
+          <textarea id="cf-msg" name="mensaje" placeholder="Cuéntame qué buscas, si tienes auto a cuenta, si necesitas financiamiento..." required></textarea>
+        </div>
+      </div>
+      <button type="submit" class="btn-cf-submit" id="cf-btn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M22 2L11 13M22 2L15 22l-4-9-9-4 20-7z"/></svg>
+        Enviar mensaje
+      </button>
+      <div class="cf-status" id="cf-status"></div>
+    </form>
+  </div>
+</section>
+
+<!-- ══ FOOTER ════════════════════════════════════════ -->
+<footer>
+  <div class="footer-main">
+    <div class="footer-left">
+      <div class="footer-brand">
+        <img class="footer-logo" src="LOGOS OFICIALES BMW/BMW LOGO 2020_Mesa de trabajo 1 copia.png" alt="BMW" />
+        <span class="footer-name">Zeus Cervantes · BMW Certified Sales Executive</span>
+      </div>
+      <a href="https://wa.me/529982140024?text=Hola%20Zeus%2C%20me%20gustar%C3%ADa%20recibir%20asesor%C3%ADa%20sobre%20veh%C3%ADculos%20BMW" target="_blank" rel="noopener" class="footer-wa-btn">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM11.987 0C5.373 0 0 5.373 0 11.987c0 2.11.558 4.094 1.533 5.812L.057 23.868l6.253-1.638A11.96 11.96 0 0011.987 24C18.6 24 24 18.627 24 12.013 24 5.373 18.6 0 11.987 0z"/></svg>
+        Iniciar chat
+      </a>
+      <div class="footer-social-row">
+        <a href="https://www.facebook.com/share/1EFtw7YubW/?mibextid=wwXIfr" target="_blank" rel="noopener" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        </a>
+        <a href="https://www.tiktok.com/@zeusc_bmwchiapas" target="_blank" rel="noopener" aria-label="TikTok">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.99a8.18 8.18 0 004.78 1.52V7.06a4.84 4.84 0 01-1.01-.37z"/></svg>
+        </a>
+        <a href="https://wa.me/529982140024" target="_blank" rel="noopener" aria-label="WhatsApp">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM11.987 0C5.373 0 0 5.373 0 11.987c0 2.11.558 4.094 1.533 5.812L.057 23.868l6.253-1.638A11.96 11.96 0 0011.987 24C18.6 24 24 18.627 24 12.013 24 5.373 18.6 0 11.987 0z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="footer-right">
+      <div class="footer-link-col">
+        <a href="#quien-soy">Sobre mí</a>
+        <a href="#financiamiento">Financiamiento</a>
+        <a href="#portafolio">Portafolio</a>
+        <a href="#testimonios">Testimonios</a>
+      </div>
+      <div class="footer-link-col">
+        <a href="#ubicacion">Visítanos</a>
+        <a href="#contacto">Contacto</a>
+        <a href="https://www.facebook.com/share/1EFtw7YubW/?mibextid=wwXIfr" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://www.tiktok.com/@zeusc_bmwchiapas" target="_blank" rel="noopener">TikTok</a>
+      </div>
+    </div>
+  </div>
+  <div class="copyright-bar">
+    <span>Zeus Cervantes · BMW Farrera Chiapas</span>
+    <span>Tuxtla Gutiérrez, Chiapas · México</span>
+  </div>
+</footer>
+
+<!-- ══ FIXED BOTTOM NAV ═══════════════════════════════ -->
+<nav class="bottom-nav" id="bottomNav">
+  <div class="bn-logo">
+    <img src="LOGOS OFICIALES BMW/BMW LOGO 2020_Mesa de trabajo 1 copia.png" alt="BMW" />
+    <span class="bn-name">Zeus Cervantes</span>
+  </div>
+  <div class="bn-divider"></div>
+  <a href="https://wa.me/529982140024?text=Hola%20Zeus%2C%20me%20gustar%C3%ADa%20recibir%20asesor%C3%ADa%20sobre%20veh%C3%ADculos%20BMW" target="_blank" rel="noopener" class="bn-wa">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM11.987 0C5.373 0 0 5.373 0 11.987c0 2.11.558 4.094 1.533 5.812L.057 23.868l6.253-1.638A11.96 11.96 0 0011.987 24C18.6 24 24 18.627 24 12.013 24 5.373 18.6 0 11.987 0z"/></svg>
+    Contactar a Zeus
+  </a>
+</nav>
+
+<script>
+  /* ── Video fade system (motionsites spec) ─────── */
+  (function() {
+    const video = document.getElementById('bgVideo');
+    if (!video) return;
+
+    let fadingOutRef = false;
+    let currentFrameId = null;
+
+    function cancelFade() {
+      if (currentFrameId !== null) {
+        cancelAnimationFrame(currentFrameId);
+        currentFrameId = null;
+      }
+    }
+
+    function fadeIn(duration) {
+      cancelFade();
+      const start = performance.now();
+      const startOpacity = parseFloat(video.style.opacity) || 0;
+
+      function step(now) {
+        const elapsed = now - start;
+        const progress = Math.min(elapsed / duration, 1);
+        video.style.opacity = startOpacity + (1 - startOpacity) * progress;
+        if (progress < 1) {
+          currentFrameId = requestAnimationFrame(step);
+        } else {
+          currentFrameId = null;
+        }
+      }
+      currentFrameId = requestAnimationFrame(step);
+    }
+
+    function fadeOut(duration) {
+      if (fadingOutRef) return;
+      fadingOutRef = true;
+      cancelFade();
+      const start = performance.now();
+      const startOpacity = parseFloat(video.style.opacity) || 1;
+
+      function step(now) {
+        const elapsed = now - start;
+        const progress = Math.min(elapsed / duration, 1);
+        video.style.opacity = startOpacity * (1 - progress);
+        if (progress < 1) {
+          currentFrameId = requestAnimationFrame(step);
+        } else {
+          currentFrameId = null;
+        }
+      }
+      currentFrameId = requestAnimationFrame(step);
+    }
+
+    video.style.opacity = '0';
+
+    video.addEventListener('canplay', function onReady() {
+      fadeIn(250);
+      video.removeEventListener('canplay', onReady);
+    });
+
+    video.addEventListener('timeupdate', function() {
+      if (!fadingOutRef && video.duration && (video.duration - video.currentTime) <= 0.55) {
+        fadeOut(250);
+      }
+    });
+
+    video.addEventListener('ended', function() {
+      video.style.opacity = '0';
+      fadingOutRef = false;
+      setTimeout(function() {
+        video.currentTime = 0;
+        video.play().then(function() {
+          fadeIn(250);
+        }).catch(function() {});
+      }, 100);
+    });
+  })();
+
+
+  /* ── fadeInUp IntersectionObserver ─────────────────── */
+  const fiuEls = document.querySelectorAll('.fiu');
+  const fiuObs = new IntersectionObserver(function(entries) {
+    entries.forEach(function(e) {
+      if (e.isIntersecting) {
+        e.target.classList.add('visible');
+        fiuObs.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+  fiuEls.forEach(function(el) { fiuObs.observe(el); });
+
+  /* ── About photo parallax ───────────────────────────── */
+  (function() {
+    var img = document.getElementById('about-parallax-img');
+    if (!img) return;
+    var wrap = img.closest('.about-parallax-wrap');
+    var raf = null;
+    function update() {
+      var rect = wrap.getBoundingClientRect();
+      var vh = window.innerHeight;
+      var progress = 1 - (rect.top + rect.height) / (vh + rect.height);
+      var offset = (progress - 0.5) * -40;
+      img.style.transform = 'translateY(' + offset + 'px)';
+      raf = null;
+    }
+    window.addEventListener('scroll', function() {
+      if (!raf) raf = requestAnimationFrame(update);
+    }, { passive: true });
+    update();
+  })();
+
+  /* ── CTA mouse trail ────────────────────────────────── */
+  (function() {
+    var box = document.getElementById('ctaBox');
+    if (!box) return;
+    var imgs = [
+      'X6 2026 PISO/PHOTO-2026-01-19-18-54-13.jpg',
+      'BMW X3 BLANCA/PHOTO-2026-01-23-11-32-51.jpg',
+      'X3 30 FROZEN/PHOTO-2026-03-18-16-34-06.jpg',
+      'X1 18 BLANCA/PHOTO-2025-06-02-12-24-12.jpg',
+      '118 SKY 2025/PHOTO-2025-08-15-10-55-32.jpg',
+      '330e JAHRE/WhatsApp Image 2026-03-10 at 12.28.19 PM.jpeg'
+    ];
+    var lastSpawn = 0;
+    box.addEventListener('mousemove', function(e) {
+      var now = Date.now();
+      if (now - lastSpawn < 100) return;
+      lastSpawn = now;
+      var rect = box.getBoundingClientRect();
+      var x = e.clientX - rect.left;
+      var y = e.clientY - rect.top;
+      var img = document.createElement('img');
+      img.src = imgs[Math.floor(Math.random() * imgs.length)];
+      img.className = 'cta-trail-img';
+      var rot = (Math.random() - 0.5) * 20;
+      img.style.left = (x - 60) + 'px';
+      img.style.top  = (y - 40) + 'px';
+      img.style.transform = 'rotate(' + rot + 'deg) scale(1)';
+      img.style.opacity = '0.85';
+      box.appendChild(img);
+      setTimeout(function() {
+        img.style.opacity = '0';
+        img.style.transform = 'rotate(' + rot + 'deg) scale(0.85)';
+        setTimeout(function() { if (img.parentNode) img.parentNode.removeChild(img); }, 320);
+      }, 650);
+    });
+  })();
+
+  /* ── Testimonials — localStorage system ──────────────── */
+  var testiIdx = 0;
+  var testiRating = 0;
+
+  var DEFAULT_TESTIMONIALS = [
+    { name: 'Carlos M.', rating: 5, comment: 'Zeus es increíble. Me asesoró con paciencia y encontré el BMW perfecto para mí. 100% recomendado.', date: 'Marzo 2026' },
+    { name: 'Fernanda L.', rating: 5, comment: 'Excelente servicio, muy profesional y honesto. Me explicó cada detalle del financiamiento sin ninguna presión.', date: 'Febrero 2026' },
+    { name: 'Rodrigo T.', rating: 5, comment: 'Ya es mi tercer BMW con Zeus. Siempre puntual, atento y con las mejores opciones del mercado en Chiapas.', date: 'Enero 2026' },
+  ];
+
+  function getTestimonials() {
+    var stored = localStorage.getItem('zeus_testimonials');
+    var user = stored ? JSON.parse(stored) : [];
+    return user.concat(DEFAULT_TESTIMONIALS);
+  }
+
+  function renderTestimonials() {
+    var track = document.getElementById('testiTrack');
+    if (!track) return;
+    var items = getTestimonials();
+    track.innerHTML = items.map(function(t) {
+      var stars = [1,2,3,4,5].map(function(i) {
+        return '<span class="star' + (i <= t.rating ? '' : ' empty') + '">★</span>';
+      }).join('');
+      var initial = t.name ? t.name[0].toUpperCase() : '?';
+      return '<div class="testi-card">' +
+        '<div class="testi-card-author">' +
+          '<div class="testi-avatar">' + initial + '</div>' +
+          '<div>' +
+            '<div class="testi-name">' + t.name + '</div>' +
+            '<div class="testi-date">' + (t.date || '') + '</div>' +
+          '</div>' +
+        '</div>' +
+        '<div class="testi-rating">' + stars + '</div>' +
+        '<div class="testi-quote">"' + t.comment + '"</div>' +
+      '</div>';
+    }).join('');
+    testiIdx = 0;
+    track.style.transform = 'translateX(0)';
+  }
+
+  function moveCarousel(dir) {
+    var track = document.getElementById('testiTrack');
+    if (!track) return;
+    var total = track.querySelectorAll('.testi-card').length;
+    testiIdx = (testiIdx + dir + total) % total;
+    track.style.transform = 'translateX(-' + (testiIdx * 100) + '%)';
+  }
+
+  function setRating(v) {
+    testiRating = v;
+    document.querySelectorAll('.testi-star-btn').forEach(function(btn, i) {
+      btn.classList.toggle('active', i < v);
+    });
+  }
+
+  function submitTestimonial() {
+    var name = document.getElementById('testiName').value.trim();
+    var comment = document.getElementById('testiComment').value.trim();
+    if (!name || !comment || !testiRating) {
+      alert('Por favor completa tu nombre, calificación y comentario.');
+      return;
+    }
+    var stored = localStorage.getItem('zeus_testimonials');
+    var list = stored ? JSON.parse(stored) : [];
+    var months = ['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'];
+    var d = new Date();
+    var dateStr = months[d.getMonth()].charAt(0).toUpperCase() + months[d.getMonth()].slice(1) + ' ' + d.getFullYear();
+    list.unshift({ name: name, rating: testiRating, comment: comment, date: dateStr });
+    localStorage.setItem('zeus_testimonials', JSON.stringify(list));
+
+    /* hide form, show success */
+    ['testi-form-title','testi-form-sub','testi-star-row','btn-testi-submit'].forEach(function(cls) {
+      var el = document.querySelector('.' + cls) || document.getElementById(cls);
+      if (el) el.style.display = 'none';
+    });
+    document.getElementById('testiName').style.display = 'none';
+    document.getElementById('testiComment').style.display = 'none';
+    document.getElementById('testiSuccess').style.display = 'block';
+
+    renderTestimonials();
+  }
+
+  document.addEventListener('DOMContentLoaded', renderTestimonials);
+
+  /* ── Nav scroll ───────────────────────────────── */
+  const nav = document.querySelector('nav');
+  window.addEventListener('scroll', function() {
+    if (window.scrollY > 80) {
+      nav.style.background = 'rgba(10,10,15,0.96)';
+      nav.style.backdropFilter = 'blur(20px)';
+      nav.style.borderBottom = '1px solid rgba(255,255,255,0.07)';
+    } else {
+      nav.style.background = '';
+      nav.style.backdropFilter = '';
+      nav.style.borderBottom = '';
+    }
+  }, {passive: true});
+
+  /* ── Scroll reveal ────────────────────────────── */
+  const reveals = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver(function(entries) {
+    entries.forEach(function(e) {
+      if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); }
+    });
+  }, {threshold: 0.1, rootMargin: '0px 0px -40px 0px'});
+  reveals.forEach(function(el) { io.observe(el); });
+</script>
+
+  <script>
+    (function(){
+      var form = document.getElementById('contactForm');
+      if (!form) return;
+      form.addEventListener('submit', async function(e){
+        e.preventDefault();
+        var btn = document.getElementById('cf-btn');
+        var status = document.getElementById('cf-status');
+        btn.disabled = true;
+        btn.textContent = 'Enviando...';
+        status.className = 'cf-status';
+        status.textContent = '';
+        var data = new FormData(form);
+        try {
+          var res = await fetch('https://api.web3forms.com/submit', {
+            method: 'POST',
+            body: data
+          });
+          var json = await res.json();
+          if (json.success) {
+            status.className = 'cf-status ok';
+            status.textContent = '¡Mensaje enviado! Te contactaré a la brevedad.';
+            form.reset();
+          } else {
+            throw new Error(json.message || 'Error al enviar');
+          }
+        } catch(err) {
+          status.className = 'cf-status err';
+          status.textContent = 'Ocurrió un error. Escríbeme directamente por WhatsApp.';
+        }
+        btn.disabled = false;
+        btn.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M22 2L11 13M22 2L15 22l-4-9-9-4 20-7z"/></svg> Enviar mensaje';
+      });
+    })();
+  </script>
+</body>
+</html>
